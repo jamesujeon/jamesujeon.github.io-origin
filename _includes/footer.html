@@ -26,7 +26,11 @@
       <p class="copyright text-muted">
       {{ site.author.name }}
       &nbsp;&bull;&nbsp;
-      {{ site.time | date: '%Y' }}
+      {% if site.static-time %}
+        {{ site.static-time }}
+      {% else %}
+        {{ site.time | date: '%Y' }}
+      {% endif %}
 
       {% if site.url-pretty %}
       &nbsp;&bull;&nbsp;
@@ -40,11 +44,10 @@
         {% endif %}
       {% endif%}
       </p>
-          <!-- Please don't remove this, keep my open source work credited :) -->
-    <p class="theme-by text-muted">
-      Theme based on 
-      <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-    </p>
+
+      <p class="theme-by text-muted">
+        Theme based on <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+      </p>
       </div>
     </div>
   </div>
