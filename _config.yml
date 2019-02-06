@@ -19,6 +19,9 @@ title: James's World
 # Short description of your site
 description: posts on my own way
 
+# Favicon
+favicon: "/img/favicon.ico"
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
