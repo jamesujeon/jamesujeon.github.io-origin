@@ -1,16 +1,23 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I'm **James Minsu Jeon**, Software Developer.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I have the following features:
 
-What else do you need?
+- Korean living in Seoul, Republic of Korea
+- I'm interested in everything about SW development
+- Now I'm working in the following areas:
+  - Native mobile(iOS, Android)
+  - REST API server(using Flask for Python)
+- I'm getting more skills and knowledges to make a service by myself
+- I love SW development :)
 
-### my history
+Do you have any questions?  
+Please email me: jamesujeon@gmail.com
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+&nbsp;  
+P.S. The profile picture above is my drawing for my cat, Hoy.  
+It's not the same in reality.
