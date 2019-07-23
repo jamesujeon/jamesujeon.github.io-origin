@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: About Me
 ---
 
 I'm **James Minsu Jeon**, Software Developer.
@@ -11,7 +11,7 @@ I have the following features:
 - I'm interested in everything about SW development
 - Now I'm working in the following areas:
   - Native mobile(iOS, Android)
-  - REST API server(using Flask for Python)
+  - REST API server(Flask with Python, Spring Boot with Java/Kotlin)
 - I'm getting more skills and knowledges to make a service by myself
 - I love SW development :)
 
