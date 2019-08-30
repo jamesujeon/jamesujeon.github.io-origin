@@ -1,16 +1,16 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
+title:          JAMESU
+description:    "Blog by James Minsu Jeon"
 url:            "https://jamesujeon.github.io"
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X
+#google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         jamesujeon
+  url:          https://jamesujeon.github.io
+  email:        jamesujeon@gmail.com
 
 # Build settings
 markdown:       kramdown
