@@ -26,6 +26,7 @@ footer,
   &-title {
     @include transition(all .2s ease-out);
     color: $default-color;
+    font-family: $nav-title-font;
     display: inline-block;
     margin: 0;
     padding-right: .2rem;
@@ -62,7 +63,6 @@ footer,
 
   a {
     color: $default-color;
-    font-family: $sans-serif;
   }
 }
 
@@ -81,7 +81,6 @@ footer,
 }
 
 footer {
-  font-family: $serif-secondary;
   padding: 2rem 0;
   text-align: center;
 
