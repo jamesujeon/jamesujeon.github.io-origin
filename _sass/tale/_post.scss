@@ -4,6 +4,7 @@
   &-info {
     color: $default-tint;
     font-family: $serif;
+    font-size: 0.9rem;
     letter-spacing: 0.5px;
     text-align: center;
 
@@ -14,6 +15,7 @@
 
   &-title {
     color: $default-shade;
+    font-family: $title-font;
     font-size: 4rem;
     margin: 1rem 0;
     text-align: center;

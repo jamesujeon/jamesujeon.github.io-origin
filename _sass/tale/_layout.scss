@@ -26,7 +26,7 @@ footer,
   &-title {
     @include transition(all .2s ease-out);
     color: $default-color;
-    font-family: $nav-title-font;
+    font-family: $title-font;
     display: inline-block;
     margin: 0;
     padding-right: .2rem;
