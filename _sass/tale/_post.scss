@@ -16,13 +16,14 @@
   &-title {
     color: $default-shade;
     font-family: $title-font;
-    font-size: 4rem;
+    font-weight: 700;
+    font-size: 3rem;
     margin: 1rem 0;
     text-align: center;
   }
 
   &-line {
-    border-top: 0.4rem solid $default-shade;
+    border-top: 0.4rem solid $point-color;
     display: block;
     margin: 0 auto 3rem;
     width: 4rem;

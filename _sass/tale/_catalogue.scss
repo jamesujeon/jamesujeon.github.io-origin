@@ -5,9 +5,9 @@
     display: inline-block;
     padding: 2rem 0;
 
-    &:hover .catalogue-line,
-    &:focus .catalogue-line {
-      width: 5rem;
+    &:hover .catalogue-title,
+    &:focus .catalogue-title {
+      background-position: 0%;
     }
 
     &:last-child {
@@ -23,18 +23,23 @@
   }
 
   &-title {
+    @include transition(all .5s ease-out);
     color: $default-shade;
     font-family: $title-font;
     display: block;
     font-size: 2rem;
     font-weight: 700;
     margin: .5rem 0;
-  }
 
-  &-line {
-    @include transition(all .3s ease-out);
-    border-top: .2rem solid $default-shade;
-    display: block;
-    width: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(
+        to right,
+        $point-color,
+        $point-color 50%,
+        $default-shade 50%);
+        background-size: 200% 100%;
+        background-position: 100%;
   }
 }
