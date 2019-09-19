@@ -1,32 +1,26 @@
 .post {
   padding: 3rem 0;
 
-  &-info {
-    color: $default-tint;
-    font-family: $serif;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    text-align: center;
-
-    span {
-      font-style: italic;
-    }
-  }
-
   &-title {
     color: $default-shade;
     font-family: $title-font;
     font-weight: 700;
-    font-size: 3rem;
-    margin: 1rem 0;
+    font-size: 2.3rem;
+    margin: 1rem 0 0 0;
     text-align: center;
+
+    @media (min-width: 600px) {
+      font-size: 2.8rem;
+    }
   }
 
-  &-line {
-    border-top: 0.4rem solid $point-color;
-    display: block;
-    margin: 0 auto 3rem;
-    width: 4rem;
+  &-time {
+    color: $default-tint;
+    font-family: $serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 3rem;
+    text-align: center;
   }
 
   p {
