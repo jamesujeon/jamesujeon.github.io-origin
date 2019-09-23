@@ -9,8 +9,9 @@ url:            "https://jamesujeon.github.io"
 # Author
 author:
   name:         jamesujeon
-  url:          https://jamesujeon.github.io
   email:        jamesujeon@gmail.com
+  url:          https://jamesujeon.github.io
+  github_url:   https://github.com/jamesujeon
 
 # Build settings
 markdown:       kramdown
