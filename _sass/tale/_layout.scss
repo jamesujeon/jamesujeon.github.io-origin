@@ -90,8 +90,14 @@ footer {
   }
 
   i {
+    @include transition(all .2s ease-out);
     margin-top: .8rem;
     color: $default-color;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+
+    &:hover,
+    &:focus {
+      opacity: .6;
+    }
   }
 }
