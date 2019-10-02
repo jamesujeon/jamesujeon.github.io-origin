@@ -95,8 +95,10 @@ footer {
     color: $default-color;
     font-size: 1.5rem;
 
-    &:hover {
-      opacity: .6;
+    @media (min-width: 600px) {
+      &:hover {
+        opacity: .6;
+      }
     }
   }
 }
