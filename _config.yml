@@ -2,6 +2,8 @@
 title:          JAMESU.DEV
 description:    "Blog by James Minsu Jeon"
 url:            "https://jamesujeon.github.io"
+lang:           "ko_KR"
+timezone:       "Asia/Seoul"
 
 # Google Analytics
 #google_analytics: UA—XXXXXXXX-X
@@ -11,7 +13,11 @@ author:
   name:         jamesujeon
   email:        jamesujeon@gmail.com
   url:          https://jamesujeon.github.io
-  github_url:   https://github.com/jamesujeon
+
+social:
+  name: James Minsu Jeon
+  links:
+    - https://github.com/jamesujeon
 
 # Build settings
 markdown:       kramdown
