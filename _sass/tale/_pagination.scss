@@ -5,8 +5,19 @@
   text-align: center;
 
   span {
-    color: $default-shade;
-    font-size: 1.1rem;
+    margin: 0 .2rem;
+
+    a {
+      color: $default-shade;
+      font-size: 1.1rem;
+      opacity: .4;
+    }
+
+    &.selected > a {
+      cursor: default;
+      font-size: 1.2rem;
+      opacity: 1;
+    }
   }
 
   .top {

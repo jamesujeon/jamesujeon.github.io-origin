@@ -32,13 +32,23 @@ sass:
 # Gems
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-seo-tag
   - jemoji
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       5
+
+# Pagination
+pagination:
+  enabled:      true
+  permalink:    /p:num/
+  sort_field:   "date"
+  sort_reverse: true
+  per_page:     5
+  trail:
+    before:     2
+    after:      2
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock ]

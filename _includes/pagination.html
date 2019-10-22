@@ -6,5 +6,11 @@
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
   {% endif %}
 
-  <span>{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  {% if paginator.page_trail %}
+    {% for trail in paginator.page_trail %}
+      <span {% if page.pagination_info.curr_page == trail.num %}class="selected"{% endif %}>
+        <a href="{{ trail.path | prepend: site.baseurl | remove_index_url }}">{{ trail.num }}</a>
+      </span>
+    {% endfor %}
+  {% endif %}
 </div>
