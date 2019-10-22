@@ -54,3 +54,4 @@ pagination:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Rakefile
