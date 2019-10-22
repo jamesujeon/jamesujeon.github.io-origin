@@ -54,5 +54,3 @@ pagination:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE_OF_TALE
-  - README.md
