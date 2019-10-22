@@ -51,4 +51,8 @@ pagination:
     after:      2
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock ]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE_OF_TALE
+  - README.md
