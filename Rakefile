@@ -26,7 +26,7 @@ task :deploy => [:build] do
     Dir.chdir tmp
     system "git init"
     system "git add ."
-    system "git commit -m 'Deploy site'"
+    system "git commit -m 'Deployed at #{Time.now}'"
     system "git remote add origin #{DEPLOY_URL}"
     system "git push origin master --force"
 
