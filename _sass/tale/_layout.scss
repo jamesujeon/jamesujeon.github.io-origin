@@ -10,7 +10,7 @@ footer,
   display: block;
   margin: 0 auto;
   max-width: 800px;
-  width: 80%;
+  width: 90%;
 }
 
 .nav {
@@ -49,10 +49,10 @@ footer,
     color: $default-color;
     display: inline-block;
     opacity: .6;
-    padding: 0 2rem 0 0;
+    padding: 0 1rem;
 
     &:last-child {
-      padding-right: 0;
+      padding-right: 1rem;
     }
 
     &:hover,
@@ -76,6 +76,10 @@ footer,
       bottom: 0;
       position: absolute;
       right: 0;
+    }
+
+    li:last-child {
+      padding-right: 0;
     }
   }
 }
