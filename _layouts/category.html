@@ -5,9 +5,6 @@ layout: default
 <div class="catalogue">
   {% for post in paginator.posts %}
     <div class="catalogue-item">
-      {% for category in post.categories %}
-        <a href="{{ category | downcase | prepend: '/' | prepend: site.baseurl }}" class="catalogue-category">{{ category }}</a>
-      {% endfor %}
       <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-post">
         <div>
           <h1 class="catalogue-title">{{ post.title }}</h1>
