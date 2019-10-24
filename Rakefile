@@ -25,6 +25,8 @@ task :deploy => [:build] do
     cp_r "_site/.", tmp
     Dir.chdir tmp
     system "git init"
+    system "git config user.name jamesujeon"
+    system "git config user.email jamesujeon@gmail.com"
     system "git add ."
     system "git commit -m 'Deployed at #{Time.now}'"
     system "git remote add origin #{DEPLOY_URL}"
