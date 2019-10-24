@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% assign header_title = page.pagination.tag | prepend: '#' %}
+
+{% for tag in site.tags %}
+  {% if tag[0] == page.pagination.tag %}
+    {% assign header_post_count = tag | last | size %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% include catalogue.html %}
+
+{% include pagination.html %}

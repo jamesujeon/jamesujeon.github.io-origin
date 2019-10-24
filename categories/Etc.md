@@ -1,5 +1,5 @@
 ---
-layout: category_post
+layout: category_catalogue
 permalink: /category/etc
 pagination:
   enabled: true

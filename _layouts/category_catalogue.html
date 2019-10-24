@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% assign header_title = page.pagination.category %}
+
+{% for category in site.categories %}
+  {% if category[0] == page.pagination.category %}
+    {% assign header_post_count = category | last | size %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% include catalogue.html %}
+
+{% include pagination.html %}

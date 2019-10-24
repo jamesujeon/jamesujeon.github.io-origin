@@ -1,0 +1,53 @@
+{% if header_title %}
+  {% unless header_post_count %}
+    {% assign header_post_count = 0 %}
+  {% endunless %}
+
+  <div class="catalogue-header">
+    <div class="catalogue-header-title">
+      <h1>{{ header_title }}</h1>
+      {% case header_post_count %}
+        {% when 0 %}(No posts)
+        {% when 1 %}(1 post)
+        {% else %}({{ header_post_count }} posts)
+      {% endcase %}
+    </div>
+  </div>
+{% endif %}
+
+<div class="catalogue">
+  {% for post in paginator.posts %}
+    <div class="catalogue-item">
+      {% if category_hidden != true and post.categories.size > 0 %}
+        <div class="catalogue-category">
+          {% for category in post.categories %}
+            <a href="{{ category | downcase | prepend: '/category/' | prepend: site.baseurl }}" class="catalogue-category-item">
+              {{ category }}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-post">
+        <div>
+          <h1 class="catalogue-post-title">{{ post.title }}</h1>
+          {% if post.subtitle %}
+            <p class="catalogue-post-subtitle">{{ post.subtitle }}</p>
+          {% endif %}
+        </div>
+      </a>
+
+      {% if post.tags.size > 0 %}
+        <div class="catalogue-tag">
+          {% for tag in post.tags %}
+            <a href="{{ tag | downcase | prepend: '/tag/' | prepend: site.baseurl }}" class="catalogue-tag-item">
+              #{{ tag }}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%Y.%m.%d" }}</time>
+    </div>
+  {% endfor %}
+</div>
