@@ -3,8 +3,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-    {% if page.title contains 'Posts' %}{{ site.title }}
-    {% else %}{{ page.title }} - {{ site.title }}
+    {% if page.pagination.category %}
+      Category: {{ page.pagination.category }} - {{ site.title }}
+    {% elsif page.pagination.tag %}
+      Tag: #{{ page.pagination.tag }} - {{ site.title }}
+    {% elsif page.title contains 'Posts' %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} - {{ site.title }}
     {% endif %}
   </title>
 

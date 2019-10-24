@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign category_hidden = true %}
+
 <div class="catalogue">
   {% for post in paginator.posts %}
     {% include catalogue_item.html %}

@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Introducing Tale"
+subtitle: "I introduce the Tale!"
 author: "Chester"
 categories: [Etc]
+tags: [jekyll, test, web]
 ---
 
 Tale is a minimal [Jekyll](https://jekyllrb.com/) theme curated for storytellers. It is designed and developed by [myself](https://github.com/chesterhow/) for a friend who writes short stories.

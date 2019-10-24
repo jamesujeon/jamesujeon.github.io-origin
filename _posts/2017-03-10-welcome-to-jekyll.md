@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+subtitle: "The fantasy theme."
 author: "Jekyll"
 categories: [Etc, Blog]
 ---

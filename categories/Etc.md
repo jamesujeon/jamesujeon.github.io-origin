@@ -1,9 +1,8 @@
 ---
-layout: category
-title: "Etc"
-permalink: /etc
+layout: category_post
+permalink: /category/etc
 pagination:
   enabled: true
-  category: "Etc"
   permalink: /p:num/
+  category: "Etc"
 ---
