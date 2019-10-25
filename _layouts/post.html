@@ -3,7 +3,20 @@ layout: default
 ---
 
 <div class="post">
+  {% if page.categories.size > 0 %}
+    <div class="post-category">
+      {% for category in page.categories %}
+        <a href="{{ category | downcase | prepend: '/category/' | prepend: site.baseurl }}" class="post-category-item">
+          {{ category }}
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
   <h1 class="post-title">{{ page.title }}</h1>
+  {% if page.subtitle %}
+    <p class="post-subtitle">{{ page.subtitle }}</p>
+  {% endif %}
   <div class="post-time">
     <time datetime="{{ page.date }}">{{ page.date | date: "%Y.%m.%d" }}</time>
   </div>

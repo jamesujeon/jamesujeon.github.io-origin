@@ -1,12 +1,23 @@
 .post {
   padding: 3rem 0;
 
+  &-category {
+    display: block;
+    text-align: center;
+
+    &-item {
+      @extend .category-text;
+      font-size: 1.1rem;
+      margin-right: .8rem;
+    }
+  }
+
   &-title {
     color: $post-title-color;
     font-family: $title-font;
     font-weight: 700;
     font-size: 2.3rem;
-    margin: 1rem 0 0 0;
+    margin: 1.2rem 0 0 0;
     text-align: center;
 
     @media (min-width: 600px) {
@@ -14,12 +25,17 @@
     }
   }
 
+  &-subtitle {
+    color: $post-subtitle-color;
+    font-size: 1.2rem;
+  }
+
   &-time {
     color: $default-tint;
     font-family: $serif;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
-    margin-bottom: 3rem;
+    margin: 1rem 0 3rem;
     text-align: center;
   }
 
@@ -28,8 +44,17 @@
     text-align: justify;
   }
 
+  p.post-subtitle {
+    margin: 0;
+    text-align: center;
+  }
+
   a:hover {
     text-decoration: underline;
+  }
+
+  a.post-category-item:hover {
+    text-decoration: none;
   }
 
   img {
