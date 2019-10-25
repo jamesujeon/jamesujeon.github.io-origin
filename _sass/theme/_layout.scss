@@ -9,7 +9,10 @@ footer,
 
 .nav {
   box-shadow: 0 2px 2px -2px $shadow-color;
+  background-color: white;
   overflow: auto;
+  top: 0;
+  position: sticky;
 
   &-container {
     margin: 1rem auto;
@@ -22,12 +25,16 @@ footer,
     color: $default-color;
     font-family: $title-font;
     display: inline-block;
+    height: 2rem;
     margin: 0;
-    padding-right: .2rem;
 
     &:hover,
     &:focus {
       opacity: .6;
+    }
+
+    > span {
+      color: $point-color;
     }
   }
 
