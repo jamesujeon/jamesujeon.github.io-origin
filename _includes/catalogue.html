@@ -18,7 +18,7 @@
 <div class="catalogue">
   {% for post in paginator.posts %}
     <div class="catalogue-item">
-      {% if category_hidden != true and post.categories.size > 0 %}
+      {% if post.categories.size > 0 %}
         <div class="catalogue-category">
           {% for category in post.categories %}
             <a href="{{ category | downcase | prepend: '/category/' | prepend: site.baseurl }}" class="catalogue-category-item">

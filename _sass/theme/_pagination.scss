@@ -13,10 +13,11 @@
       opacity: .4;
     }
 
-    &.selected > a {
+    &.selected a {
       cursor: default;
       font-size: 1.2rem;
       opacity: 1;
+      pointer-events: none;
     }
   }
 

@@ -13,13 +13,9 @@ div.catalogue {
       margin-bottom: 1.5rem;
       text-align: left;
 
-      > h1 {
+      h1 {
         font-size: 2.1rem;
         margin: 0;
-
-        > span {
-          color: $point-color;
-        }
       }
     }
   }
@@ -38,20 +34,18 @@ div.catalogue {
     margin-bottom: .8rem;
 
     &-item {
-      color: $point-color;
-      font-family: $sans-serif;
+      @extend .category-text;
       margin-right: .6rem;
     }
   }
 
   &-post {
-    color: $default-color;
     display: inline-block;
     width: 100%;
 
     &-title {
       @include transition(all .5s ease-out);
-      color: $default-shade;
+      color: $post-title-color;
       font-family: $title-font;
       display: block;
       font-size: 1.8rem;
@@ -61,6 +55,7 @@ div.catalogue {
   
     &-subtitle {
       @include transition(all .5s ease-out);
+      color: $post-subtitle-color;
       margin: 0;
     }
   }
@@ -69,11 +64,7 @@ div.catalogue {
     margin-top: .8rem;
 
     &-item {
-      background-color: #eee;
-      color: #999;
-      font-family: $sans-serif;
-      font-size: .85rem;
-      border-radius: 4px;
+      @extend .tag-text;
       margin-right: .5rem;
       padding: 3px 8px;
     }

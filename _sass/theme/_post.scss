@@ -2,7 +2,7 @@
   padding: 3rem 0;
 
   &-title {
-    color: $default-shade;
+    color: $post-title-color;
     font-family: $title-font;
     font-weight: 700;
     font-size: 2.3rem;
@@ -44,7 +44,6 @@
     text-align: center;
   }
 
-  // CSS for making emoji inline
   img.emoji {
     display: inline-block;
     left: 0;
