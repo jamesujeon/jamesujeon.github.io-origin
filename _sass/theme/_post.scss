@@ -3,11 +3,10 @@
 
   &-category {
     display: block;
-    text-align: center;
 
     &-item {
       @extend .category-text;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-right: .8rem;
     }
   }
@@ -16,12 +15,11 @@
     color: $post-title-color;
     font-family: $title-font;
     font-weight: 700;
-    font-size: 2.3rem;
-    margin: 1.2rem 0 0 0;
-    text-align: center;
+    font-size: 2.1rem;
+    margin: 1rem 0 0 0;
 
     @media (min-width: 600px) {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
   }
 
@@ -30,23 +28,25 @@
     font-size: 1.2rem;
   }
 
+  &-tag {
+    margin-top: .8rem;
+
+    &-item {
+      @extend .tag-text;
+    }
+  }
+
   &-time {
     color: $default-tint;
     font-family: $serif;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
-    margin: 1rem 0 3rem;
-    text-align: center;
+    margin: 1rem 0 4rem;
   }
 
   p {
     margin: 0 0 1rem;
     text-align: justify;
-  }
-
-  p.post-subtitle {
-    margin: 0;
-    text-align: center;
   }
 
   a:hover {
