@@ -27,15 +27,9 @@ div.catalogue {
     &:last-child {
       border: 0;
     }
-  }
 
-  &-category {
-    display: block;
-    margin-bottom: .8rem;
-
-    &-item {
-      @extend .category-text;
-      margin-right: .6rem;
+    .category-items {
+      margin-bottom: .8rem;
     }
   }
 

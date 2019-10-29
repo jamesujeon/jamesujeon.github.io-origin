@@ -3,6 +3,11 @@ layout: default
 ---
 
 {% assign header_title = page.pagination.category %}
+{% if page.pagination.parents %}
+  {% for parent in page.pagination.parents reversed %}
+    {% assign header_title = header_title | prepend: ' > ' | prepend: parent %}
+  {% endfor %}
+{% endif %}
 
 {% for category in site.categories %}
   {% if category[0] == page.pagination.category %}

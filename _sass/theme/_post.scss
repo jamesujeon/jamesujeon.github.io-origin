@@ -1,16 +1,6 @@
 .post {
   padding: 3rem 0;
 
-  &-category {
-    display: block;
-
-    &-item {
-      @extend .category-text;
-      font-size: 1.2rem;
-      margin-right: .8rem;
-    }
-  }
-
   &-title {
     color: $post-title-color;
     font-family: $title-font;
@@ -44,6 +34,10 @@
     margin: 1rem 0 4rem;
   }
 
+  .category-item {
+    font-size: 1.2rem;
+  }
+
   p {
     margin: 0 0 1rem;
     text-align: justify;
@@ -53,7 +47,7 @@
     text-decoration: underline;
   }
 
-  a.post-category-item:hover {
+  a.category-item:hover {
     text-decoration: none;
   }
 

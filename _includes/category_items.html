@@ -1,0 +1,20 @@
+{% if category_items and category_items.size > 0 %}
+  <div class="category-items">
+    {% assign url = '/categories/' | prepend: site.baseurl %}
+    {% for category in category_items %}
+      {% if forloop.first == false %}
+        {% assign url = category | downcase | prepend: '/' | prepend: url %}
+      {% else %}
+        {% assign url = category | downcase | prepend: url %}
+      {% endif %}
+
+      <a href="{{ url }}" class="category-item">
+        {{ category }}
+      </a>
+
+      {% if forloop.length > 0 and forloop.last == false %}
+        <span>></span>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
