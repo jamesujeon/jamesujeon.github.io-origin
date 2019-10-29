@@ -37,7 +37,7 @@ plugins:
   - jemoji
 
 # Permalinks
-permalink:      /:year/:month/:day/:title
+permalink:      /:year/:month/:day/:title/
 
 # Pagination
 pagination:
