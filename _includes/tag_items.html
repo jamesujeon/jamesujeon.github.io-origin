@@ -1,0 +1,9 @@
+{% if tag_items and tag_items.size > 0 %}
+  <div class="tag-items">
+    {% for tag in tag_items %}
+      <a href="{{ tag | downcase | prepend: '/tags/' | prepend: site.baseurl }}" class="tag-item">
+        #{{ tag }}
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

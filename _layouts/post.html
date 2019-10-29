@@ -12,15 +12,8 @@ layout: default
     <p class="post-subtitle">{{ page.subtitle }}</p>
   {% endif %}
 
-  {% if page.tags.size > 0 %}
-    <div class="post-tag">
-      {% for tag in page.tags %}
-        <a href="{{ tag | downcase | prepend: '/tags/' | prepend: site.baseurl }}" class="post-tag-item">
-          #{{ tag }}
-        </a>
-      {% endfor %}
-    </div>
-  {% endif %}
+  {% assign tag_items = page.tags %}
+  {% include tag_items.html %}
 
   <div class="post-time">
     <time datetime="{{ page.date }}">{{ page.date | date: "%Y.%m.%d" }}</time>

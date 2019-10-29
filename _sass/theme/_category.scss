@@ -1,11 +1,14 @@
 .category {
+  &-items, &-item {
+    color: $point-color;
+    font-family: $sans-serif;
+  }
+
   &-items {
-    @extend .category-text;
     display: block;
   }
 
   &-item {
-    @extend .category-text;
     margin-right: .3rem;
 
     &:not(:first-child) {

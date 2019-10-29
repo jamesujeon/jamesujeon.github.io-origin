@@ -27,10 +27,6 @@ div.catalogue {
     &:last-child {
       border: 0;
     }
-
-    .category-items {
-      margin-bottom: .8rem;
-    }
   }
 
   &-post {
@@ -54,14 +50,6 @@ div.catalogue {
     }
   }
 
-  &-tag {
-    margin-top: .8rem;
-
-    &-item {
-      @extend .tag-text;
-    }
-  }
-
   &-time {
     display: block;
     color: $default-tint;
@@ -69,5 +57,13 @@ div.catalogue {
     font-size: .9rem;
     letter-spacing: .5px;
     margin-top: 1rem;
+  }
+
+  .category-items {
+    margin-bottom: .8rem;
+  }
+
+  .tag-items {
+    margin-top: .8rem;
   }
 }
