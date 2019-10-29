@@ -12,7 +12,7 @@ footer,
   background-color: white;
   overflow: auto;
   top: 0;
-  position: sticky;
+  position: static;
 
   &-container {
     margin: 1rem auto;
@@ -69,6 +69,8 @@ footer,
 
 @media (min-width: 600px) {
   .nav {
+    position: sticky;
+
     &-container {
       text-align: left;
     }
