@@ -21,7 +21,7 @@
       {% if post.categories.size > 0 %}
         <div class="catalogue-category">
           {% for category in post.categories %}
-            <a href="{{ category | downcase | prepend: '/category/' | prepend: site.baseurl }}" class="catalogue-category-item">
+            <a href="{{ category | downcase | prepend: '/categories/' | prepend: site.baseurl }}" class="catalogue-category-item">
               {{ category }}
             </a>
           {% endfor %}
@@ -40,7 +40,7 @@
       {% if post.tags.size > 0 %}
         <div class="catalogue-tag">
           {% for tag in post.tags %}
-            <a href="{{ tag | downcase | prepend: '/tag/' | prepend: site.baseurl }}" class="catalogue-tag-item">
+            <a href="{{ tag | downcase | prepend: '/tags/' | prepend: site.baseurl }}" class="catalogue-tag-item">
               #{{ tag }}
             </a>
           {% endfor %}

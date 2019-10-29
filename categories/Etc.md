@@ -1,6 +1,6 @@
 ---
 layout: category_catalogue
-permalink: /category/etc
+permalink: /categories/etc
 pagination:
   enabled: true
   permalink: /p:num/

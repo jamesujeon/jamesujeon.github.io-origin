@@ -1,6 +1,6 @@
 ---
 layout: tag_catalogue
-permalink: /tag/jekyll
+permalink: /tags/jekyll
 pagination:
   enabled: true
   permalink: /p:num/
