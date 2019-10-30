@@ -12,5 +12,7 @@
         <a href="{{ trail.path | prepend: site.baseurl | remove_index_url }}">{{ trail.num }}</a>
       </span>
     {% endfor %}
+  {% elsif paginator.total_posts > 0 %}
+    <span class="selected">1</span>
   {% endif %}
 </div>
