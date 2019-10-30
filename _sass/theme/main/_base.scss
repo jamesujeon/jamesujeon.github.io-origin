@@ -6,6 +6,9 @@
 html,
 body {
   color: $default-color;
+  height: 100%;
+  min-width: 300px;
+  min-height: 500px;
   margin: 0;
   padding: 0;
 }
@@ -64,6 +67,13 @@ img {
 
 td {
   vertical-align: top;
+}
+
+.screen-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .center-image-container {
