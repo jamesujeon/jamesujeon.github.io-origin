@@ -1,0 +1,25 @@
+.error-page {
+  text-align: center;
+  padding: 6rem 0 4rem;
+
+  &-image {
+    @extend .center-image-container;
+    
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  &-title {
+    @extend .post-title;
+    font-size: 4rem !important;
+    margin: 0 !important;
+  }
+
+  &-subtitle {
+    @extend .post-subtitle;
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+  }
+}
