@@ -1,10 +1,11 @@
-@import 'theme/variables';
-@import 'theme/base';
-@import 'theme/code';
+@import 'theme/main/variables';
+@import 'theme/main/base';
+@import 'theme/main/code';
+@import 'theme/main/syntax';
+@import 'theme/main/layout';
+
 @import 'theme/post';
-@import 'theme/syntax';
-@import 'theme/layout';
-@import 'theme/pagination';
 @import 'theme/catalogue';
+@import 'theme/pagination';
 @import 'theme/category';
 @import 'theme/tag';
