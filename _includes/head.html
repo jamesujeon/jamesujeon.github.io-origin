@@ -4,7 +4,13 @@
 
   <title>
     {% if page.pagination.category %}
-      Category: {{ page.pagination.category }} - {{ site.title }}
+      {% assign category_title = page.pagination.category %}
+      {% if page.pagination.parents %}
+        {% for parent in page.pagination.parents reversed %}
+          {% assign category_title = category_title | prepend: ' > ' | prepend: parent %}
+        {% endfor %}
+      {% endif %}
+      Category: {{ category_title }} - {{ site.title }}
     {% elsif page.pagination.tag %}
       Tag: #{{ page.pagination.tag }} - {{ site.title }}
     {% elsif page.title contains 'Posts' %}
