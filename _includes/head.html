@@ -4,19 +4,25 @@
 
   <title>
     {% if page.pagination.category %}
-      {% assign category_title = page.pagination.category %}
+      {% assign title_prefix = page.pagination.category %}
       {% if page.pagination.parents %}
         {% for parent in page.pagination.parents reversed %}
-          {% assign category_title = category_title | prepend: ' > ' | prepend: parent %}
+          {% assign title_prefix = title_prefix | prepend: ' > ' | prepend: parent %}
         {% endfor %}
       {% endif %}
-      Category: {{ category_title }} - {{ site.title }}
+      {% assign title_prefix = title_prefix | prepend: 'Category: ' %}
     {% elsif page.pagination.tag %}
-      Tag: #{{ page.pagination.tag }} - {{ site.title }}
-    {% elsif page.title contains 'Posts' %}
-      {{ site.title }}
+      {% assign title_prefix = page.pagination.tag | prepend: 'Tag: #' %}
+    {% elsif page.title %}
+      {% unless page.title contains 'Posts' %}
+        {% assign title_prefix = page.title %}
+      {% endunless %}
+    {% endif %}
+
+    {% if title_prefix %}
+      {{ site.title | prepend: ' - ' | prepend: title_prefix }}
     {% else %}
-      {{ page.title }} - {{ site.title }}
+      {{ site.title }}
     {% endif %}
   </title>
 
