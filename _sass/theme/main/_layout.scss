@@ -1,7 +1,7 @@
 body > div {
   position: relative;
   min-height: 100%;
-  padding-bottom: 8rem;
+  padding-bottom: 7.5rem;
 }
 
 main,
@@ -93,11 +93,14 @@ main,
 }
 
 footer {
+  border-top: 1px solid $grey-2;
+  border-bottom: 1px solid $grey-2;
+  background-color: $grey-3;
   text-align: center;
   position: absolute;
   width: 100%;
   bottom: 0;
-  margin-bottom: 2rem;
+  padding: 1rem 0 2rem;
 
   span {
     color: $default-color;
@@ -106,14 +109,18 @@ footer {
 
   i {
     @include transition(all .2s ease-out);
-    margin-top: .8rem;
     color: $default-color;
     font-size: 1.5rem;
+    margin-top: .8rem;
 
     @media (min-width: 600px) {
       &:hover {
         opacity: .6;
       }
     }
+  }
+
+  .mailto-wrapper {
+    margin-right: .3rem;
   }
 }

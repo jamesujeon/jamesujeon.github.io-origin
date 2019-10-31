@@ -1,11 +1,10 @@
 .pagination {
-  border-top: 1px solid $grey-2;
   position: relative;
   text-align: center;
-  padding-top: 2rem;
+  margin: -1rem 0 1rem;
 
   span {
-    margin: 0 .2rem;
+    margin: 0 .3rem;
 
     a {
       color: $default-shade;

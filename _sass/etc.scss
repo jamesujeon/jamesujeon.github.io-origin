@@ -22,7 +22,7 @@
     }
   }
 
-  &-wrapper:hover &-message {
+  &-wrapper &-message {
     display: block;
 
     &:empty {
