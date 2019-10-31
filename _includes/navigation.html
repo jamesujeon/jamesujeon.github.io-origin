@@ -1,11 +1,16 @@
+{% assign menu_url = page.url | slice: 1, 5 %}{% if menu_url == 'about' %}{% assign about_selected = true %}{% endif %}
+{% assign menu_url = page.url | slice: 1, 3 %}{% if menu_url == '404' %}{% assign is_error_page = true %}{% endif %}
+{% unless is_error_page or about_selected %}{% assign posts_selected = true %}{% endunless %}
+
 <nav class="nav">
   <div class="nav-container">
     <a href="{{ site.baseurl }}/">
       <h2 class="nav-title">(this) -> <span>Jamesu</span></h2>
     </a>
+
     <ul>
-      <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-      <li><a href="{{ site.baseurl }}/">Posts</a></li>
+      <li><a {% if about_selected %}class="selected"{% endif %} href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+      <li><a {% if posts_selected %}class="selected"{% endif %} href="{{ site.baseurl }}/">Posts</a></li>
     </ul>
   </div>
 </nav>
