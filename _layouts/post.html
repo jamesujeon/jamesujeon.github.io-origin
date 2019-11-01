@@ -3,6 +3,10 @@ layout: default
 ---
 
 <div class="post">
+  {% if page.title_image %}
+    <div class="post-title-image"><img src="{{ page.title_image | prepend: page.url }}"></div>
+  {% endif %}
+
   {% assign category_items = page.categories %}
   {% include category_items.html %}
 

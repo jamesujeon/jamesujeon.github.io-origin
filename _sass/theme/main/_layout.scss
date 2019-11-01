@@ -9,7 +9,7 @@ main,
   display: block;
   margin: 0 auto;
   max-width: 800px;
-  width: 90%;
+  width: calc(100% - 2rem);
 }
 
 .nav {
