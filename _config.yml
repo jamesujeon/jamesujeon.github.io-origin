@@ -4,6 +4,7 @@ description:    "Blog by James Minsu Jeon"
 url:            "https://jamesujeon.github.io"
 lang:           "ko_KR"
 timezone:       "Asia/Seoul"
+home_path:      "/posts"
 
 # Google Analytics
 #google_analytics: UA—XXXXXXXX-X
@@ -38,7 +39,7 @@ plugins:
   - jemoji
 
 # Permalinks
-permalink:      /:year/:month/:day/:title/
+permalink:      /posts/:year/:month/:title/
 
 # Pagination
 pagination:
