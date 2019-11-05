@@ -9,8 +9,8 @@
     </a>
 
     <ul>
-      <li><a {% if about_selected %}class="selected"{% endif %} href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-      <li><a {% if posts_selected %}class="selected"{% endif %} href="{{ '/posts' | prepend: site.baseurl }}">Posts</a></li>
+      <li {% if about_selected %}class="selected"{% endif %}><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+      <li {% if posts_selected %}class="selected"{% endif %}><a href="{{ '/posts' | prepend: site.baseurl }}">Posts</a></li>
     </ul>
   </div>
 </nav>

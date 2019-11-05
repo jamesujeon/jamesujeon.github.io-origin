@@ -65,14 +65,14 @@ main,
     &:focus {
       opacity: 1;
     }
+
+    &.selected {
+      opacity: 1;
+    }
   }
 
   a {
     color: $default-color;
-
-    &.selected {
-      font-weight: bold;
-    }
   }
 }
 
