@@ -19,35 +19,4 @@
       pointer-events: none;
     }
   }
-
-  .top {
-    @include transition(all .3s ease-out);
-    color: $default-color;
-    font-size: 1.1rem;
-    opacity: .6;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  .arrow {
-    @include transition(all .3s ease-out);
-    color: $default-color;
-    position: absolute;
-
-    &:hover,
-    &:focus {
-      opacity: .6;
-      text-decoration: none;
-    }
-  }
-
-  .left {
-    left: 0;
-  }
-
-  .right {
-    right: 0;
-  }
 }
