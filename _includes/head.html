@@ -2,29 +2,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    {% if page.pagination.category %}
-      {% assign title_prefix = page.pagination.category %}
-      {% if page.pagination.parents %}
-        {% for parent in page.pagination.parents reversed %}
-          {% assign title_prefix = title_prefix | prepend: ' > ' | prepend: parent %}
-        {% endfor %}
-      {% endif %}
-      {% assign title_prefix = title_prefix | prepend: 'Category: ' %}
-    {% elsif page.pagination.tag %}
-      {% assign title_prefix = page.pagination.tag | prepend: 'Tag: #' %}
-    {% elsif page.title %}
-      {% unless page.title contains 'Posts' %}
-        {% assign title_prefix = page.title %}
-      {% endunless %}
+  {% assign head_title = site.title %}
+  {% if page.pagination.category %}
+    {% assign title_prefix = page.pagination.category %}
+    {% if page.pagination.parents %}
+      {% for parent in page.pagination.parents reversed %}
+        {% assign title_prefix = title_prefix | prepend: ' > ' | prepend: parent %}
+      {% endfor %}
     {% endif %}
+    {% assign title_prefix = title_prefix | prepend: 'Category: ' %}
+  {% elsif page.pagination.tag %}
+    {% assign title_prefix = page.pagination.tag | prepend: 'Tag: #' %}
+  {% elsif page.title %}
+    {% unless page.title contains 'Posts' %}
+      {% assign title_prefix = page.title %}
+    {% endunless %}
+  {% endif %}
+  {% if title_prefix %}
+    {% assign head_title = site.title | prepend: ' - ' | prepend: title_prefix %}
+  {% endif %}
 
-    {% if title_prefix %}
-      {{ site.title | prepend: ' - ' | prepend: title_prefix }}
-    {% else %}
-      {{ site.title }}
-    {% endif %}
-  </title>
+  <title>{{ head_title }}</title>
 
   {% seo title=false %}
 
