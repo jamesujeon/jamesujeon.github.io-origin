@@ -1,0 +1,16 @@
+etc:
+  name: "Etc"
+  children:
+    blog:
+      name: "Blog"
+    test:
+      name: "test"
+test2:
+  name: "test2"
+  children:
+    test3:
+      name: "test3"
+test4:
+  name: "test4"
+
+# todo: 테스트 데이터 지우기

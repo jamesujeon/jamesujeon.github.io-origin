@@ -21,3 +21,37 @@
     }
   }
 }
+
+.categories {
+  padding: 2rem 0 3.5rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &.child {
+      margin-left: 1.5rem;
+    }
+  }
+
+  a {
+    display: flex;
+    color: $default-color;
+    padding: .5rem;
+
+    &:hover {
+      background-color: $grey-3;
+    }
+
+    i {
+      line-height: 1.5rem;
+      margin-right: .5rem;
+    }
+  }
+
+  &-post-count {
+    @extend .tag-item;
+    margin-left: 1rem;
+  }
+}
