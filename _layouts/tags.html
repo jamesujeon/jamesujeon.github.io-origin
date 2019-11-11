@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="catalogue-header">
+  <div class="catalogue-header-title">
+    <h1>Tags</h1>
+  </div>
+</div>
+
+{% assign tags = site.tags | sort %}
+{% assign ranked_tags = site.tags | sort_tags_by_post_count %}
+{% assign max_post_count = ranked_tags.first.last | size | times: 1.0 %}
+
+<div class="tag-cloud">
+  {% for tag in tags %}
+    <span>
+      <a href="{{ tag[0] | prepend: '/' | prepend: page.url }}" class="tag-cloud-item"
+         style="font-size: {{ tag.last | size | times: 100 | divided_by: site.tags.size | plus: 70 }}%;
+                opacity: {{ tag.last | size | divided_by: max_post_count | plus: 0.1 }};">
+        #{{ tag[0] }}
+      </a>
+    </span>
+  {% endfor %}
+</div>
+
+<div class="tag-rankings">
+  <div class="catalogue-header-title">
+    <h2>Rankings</h2>
+  </div>
+
+  {% for tag in ranked_tags %}
+    <span>
+      <a href="{{ tag[0] | prepend: '/' | prepend: page.url }}" class="tag-item">
+        #{{ tag[0] }} ({{ tag.last | size }})
+      </a>
+    </span>
+  {% endfor %}
+</div>

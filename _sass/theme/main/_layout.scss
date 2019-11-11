@@ -45,6 +45,8 @@ main,
   }
 
   ul {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     margin: 1rem 0 0;
     padding: 0;
@@ -56,11 +58,7 @@ main,
     color: $default-color;
     display: inline-block;
     opacity: .6;
-    padding: 0 1rem;
-
-    &:last-child {
-      padding-right: 1rem;
-    }
+    margin: 0 1rem;
 
     &:hover,
     &:focus {
@@ -92,7 +90,7 @@ main,
     }
 
     li:last-child {
-      padding-right: 0;
+      margin-right: 0;
     }
   }
 }

@@ -9,3 +9,37 @@
     padding: 3px 8px;
   }
 }
+
+.tag-cloud {
+  padding: 2rem 0;
+  margin: 0 auto;
+
+  &-item {
+    color: $default-color;
+    padding: 0 .3rem;
+  }
+}
+
+.tag-rankings {
+  padding-bottom: 3rem;
+
+  .catalogue-header-title > h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  span {
+    display: block;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .tag-item {
+    @include transition(all .3s ease-out);
+    font-size: 1rem;
+
+    &:hover,
+    &:focus {
+      color: $default-color;
+    }
+  }
+}
