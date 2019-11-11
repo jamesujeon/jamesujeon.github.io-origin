@@ -25,7 +25,7 @@ layout: default
             {% assign child_url = child[0] | prepend: '/' | prepend: category_url %}
             <li>
               <a href="{{ child_url }}">
-                <i class="fas fa-paperclip fa-fw"></i>
+                <i class="fas fa-folder fa-fw"></i>
                 <span>{{ child_name }}</span>
                 <span class="categories-post-count">{{ site.categories[child_name] | size }}</span>
               </a>
