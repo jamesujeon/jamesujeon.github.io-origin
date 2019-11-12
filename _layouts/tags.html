@@ -15,8 +15,8 @@ layout: default
   {% assign max_post_count = ranked_tags.first.last | size %}
   {% for tag in tags %}
     {% assign post_count_weight = tag.last | size | times: 1.0 | divided_by: max_post_count %}
-    {% if post_count_weight < 0.3 %}
-      {% assign post_count_weight = 0.3 %}
+    {% if post_count_weight < 0.4 %}
+      {% assign post_count_weight = 0.4 %}
     {% endif %}
 
     <span>

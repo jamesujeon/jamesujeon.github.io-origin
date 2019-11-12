@@ -72,10 +72,20 @@ main,
 
   a {
     color: $default-color;
+
+    &.menu {
+      i.fa-robot {
+        margin-right: .1rem;
+      }
+
+      span {
+        margin-left: .2rem;
+      }
+    }
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 801px) {
   .nav {
     position: sticky;
 
@@ -91,6 +101,24 @@ main,
 
     li:last-child {
       margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    .menu {
+      i {
+        font-size: 1.2rem;
+
+        &.fa-robot {
+          margin-right: 0 !important;
+        }
+      }
+
+      span {
+        display: none;
+      }
     }
   }
 }
