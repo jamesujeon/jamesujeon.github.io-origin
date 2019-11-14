@@ -75,6 +75,7 @@ main,
 
     &.menu {
       i.fa-robot {
+        margin-left: -.1rem;
         margin-right: .1rem;
       }
 
@@ -112,6 +113,7 @@ main,
         font-size: 1.2rem;
 
         &.fa-robot {
+          margin-left: 0 !important;
           margin-right: 0 !important;
         }
       }

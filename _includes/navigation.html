@@ -1,7 +1,7 @@
-{% assign menu_index = 1 %}
-{% assign menu_url = page.url | slice: 1, 5 %}{% if menu_url == 'about' %}{% assign menu_index = 0 %}{% endif %}
-{% assign menu_url = page.url | slice: 1, 10 %}{% if menu_url == 'categories' %}{% assign menu_index = 2 %}{% endif %}
-{% assign menu_url = page.url | slice: 1, 4 %}{% if menu_url == 'tags' %}{% assign menu_index = 3 %}{% endif %}
+{% assign menu_index = 0 %}
+{% assign menu_url = page.url | slice: 1, 10 %}{% if menu_url == 'categories' %}{% assign menu_index = 1 %}{% endif %}
+{% assign menu_url = page.url | slice: 1, 4 %}{% if menu_url == 'tags' %}{% assign menu_index = 2 %}{% endif %}
+{% assign menu_url = page.url | slice: 1, 5 %}{% if menu_url == 'about' %}{% assign menu_index = 3 %}{% endif %}
 {% assign menu_url = page.url | slice: 1, 3 %}{% if menu_url == '404' %}{% assign menu_index = -1 %}{% endif %}
 
 <nav class="nav">
@@ -12,27 +12,27 @@
 
     <ul>
       <li {% if menu_index == 0 %}class="selected"{% endif %}>
-        <a href="{{ '/about' | prepend: site.baseurl }}" class="menu">
-          <i class="fas fa-fw {% if menu_index == 0 %}fa-robot{% else %}fa-user-alt{% endif %}"></i>
-          <span>About</span>
-        </a>
-      </li>
-      <li {% if menu_index == 1 %}class="selected"{% endif %}>
         <a href="{{ '/posts' | prepend: site.baseurl }}" class="menu">
-          <i class="fas fa-fw {% if menu_index == 1 %}fa-book-open{% else %}fa-book{% endif %}"></i>
+          <i class="fas fa-fw {% if menu_index == 0 %}fa-book-open{% else %}fa-book{% endif %}"></i>
           <span>Posts</span>
         </a>
       </li>
-      <li {% if menu_index == 2 %}class="selected"{% endif %}>
+      <li {% if menu_index == 1 %}class="selected"{% endif %}>
         <a href="{{ '/categories' | prepend: site.baseurl }}" class="menu">
-          <i class="fas fa-fw {% if menu_index == 2 %}fa-folder-open{% else %}fa-folder{% endif %}"></i>
+          <i class="fas fa-fw {% if menu_index == 1 %}fa-folder-open{% else %}fa-folder{% endif %}"></i>
           <span>Categories</span>
         </a>
       </li>
-      <li {% if menu_index == 3 %}class="selected"{% endif %}>
+      <li {% if menu_index == 2 %}class="selected"{% endif %}>
         <a href="{{ '/tags' | prepend: site.baseurl }}" class="menu">
-          <i class="fas fa-fw {% if menu_index == 3 %}fa-tag{% else %}fa-tags{% endif %}"></i>
+          <i class="fas fa-fw {% if menu_index == 2 %}fa-tag{% else %}fa-tags{% endif %}"></i>
           <span>Tags</span>
+        </a>
+      </li>
+      <li {% if menu_index == 3 %}class="selected"{% endif %}>
+        <a href="{{ '/about' | prepend: site.baseurl }}" class="menu">
+          <i class="fas fa-fw {% if menu_index == 3 %}fa-robot{% else %}fa-user-alt{% endif %}"></i>
+          <span>About</span>
         </a>
       </li>
     </ul>
