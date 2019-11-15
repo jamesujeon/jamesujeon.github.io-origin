@@ -1,0 +1,81 @@
+.about {
+  padding: 0;
+
+  &-profile {
+    &-image {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      margin: 0;
+
+      img {
+        margin: 0;
+      }
+
+      div {
+        color: $grey-1;
+        font-size: .9rem;
+        margin-top: -1rem;
+      }
+    }
+
+    &-content {
+      float: left;
+      width: calc(60% - 2rem);
+      margin: 3.5rem 0 0 2rem;
+
+      h2 {
+        margin: 0;
+  
+        span {
+          color: $point-color;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+
+        &.whisper {
+          color: $grey-1;
+          font-size: .8rem;
+          margin-top: .5rem;
+        }
+      }
+
+      &-contacts {
+        h4 {
+          font-family: $sans-serif;
+          margin: 2.5rem 0 .8rem 0;
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          margin: 0 0 .5rem .2rem;
+
+          i,
+          a {
+            color: $default-color;
+            font-size: 1.2rem;
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+          }
+
+          span {
+            font-family: $monospaced;
+            font-size: .9rem;
+            margin-left: .6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// todo: 작은 화면 고려하기
