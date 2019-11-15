@@ -1,6 +1,6 @@
 # Site settings
-title:          Jamesu.dev
-description:    "Blog by James Minsu Jeon"
+title:          Jamesu Devlog
+description:    "Dev Blog by James Minsu Jeon"
 url:            "https://jamesujeon.github.io"
 lang:           "ko_KR"
 timezone:       "Asia/Seoul"
