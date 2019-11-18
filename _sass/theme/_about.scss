@@ -1,5 +1,28 @@
 .about {
-  padding-bottom: 3rem;
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    word-spacing: 3px;
+    margin: 0 0 .5rem;
+
+    .fa-check-square {
+      margin: 0 .8rem 0 .3rem;
+    }
+
+    &.rank {
+      &-1 {
+        font-weight: bold;
+      }
+
+      &-3 {
+        opacity: .5;
+      }
+    }
+  }
 
   &-profile {
     &-image {
@@ -42,40 +65,34 @@
       &-contacts {
         h4 {
           font-family: $sans-serif;
-          margin: 2.5rem 0 .8rem 0;
+          margin: 2rem 0 .8rem 0;
         }
 
-        div {
+        i,
+        a {
+          color: $default-color;
+          font-size: 1.2rem;
+        }
+
+        a {
           display: flex;
           align-items: center;
-          margin: 0 0 .5rem .2rem;
+        }
 
-          i,
-          a {
-            color: $default-color;
-            font-size: 1.2rem;
-          }
-
-          a {
-            display: flex;
-            align-items: center;
-          }
-
-          span {
-            font-family: $monospaced;
-            font-size: .9rem;
-            margin-left: .6rem;
-          }
+        span {
+          font-family: $monospaced;
+          font-size: .9rem;
+          margin-left: .6rem;
         }
       }
     }
 
     @media (min-width: 800px) {
-      height: 350px;
+      height: 420px;
 
       &-image {
         float: left;
-        width: 40%;
+        width: 50%;
         margin: 0;
 
         div {
@@ -85,8 +102,34 @@
 
       &-content {
         float: left;
-        width: calc(60% - 2rem);
-        margin: 2rem 0 0 2rem;
+        width: 50%;
+        margin-top: 5rem;
+      }
+    }
+  }
+
+  &-content {
+    margin: 3rem 0;
+
+    h2 {
+      margin: 0;
+    }
+
+    &-right {
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 800px) {
+      height: 250px;
+
+      &-left,
+      &-right {
+        float: left;
+        width: 50%;
+      }
+
+      &-right {
+        margin-top: 0;
       }
     }
   }
