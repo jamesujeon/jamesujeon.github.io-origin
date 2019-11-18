@@ -1,15 +1,12 @@
 .about {
-  padding: 0;
+  padding-bottom: 3rem;
 
   &-profile {
     &-image {
-      float: left;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 40%;
-      margin: 0;
 
       img {
         margin: 0;
@@ -18,14 +15,12 @@
       div {
         color: $grey-1;
         font-size: .9rem;
-        margin-top: -1rem;
+        margin-top: -9vw;
       }
     }
 
     &-content {
-      float: left;
-      width: calc(60% - 2rem);
-      margin: 3.5rem 0 0 2rem;
+      margin-top: 2.5rem;
 
       h2 {
         margin: 0;
@@ -37,12 +32,11 @@
 
       p {
         margin-bottom: 0;
+      }
 
-        &.whisper {
-          color: $grey-1;
-          font-size: .8rem;
-          margin-top: .5rem;
-        }
+      .whisper {
+        color: $grey-1;
+        font-size: .8rem;
       }
 
       &-contacts {
@@ -75,7 +69,25 @@
         }
       }
     }
+
+    @media (min-width: 800px) {
+      height: 350px;
+
+      &-image {
+        float: left;
+        width: 40%;
+        margin: 0;
+
+        div {
+          margin-top: -1rem;
+        }
+      }
+
+      &-content {
+        float: left;
+        width: calc(60% - 2rem);
+        margin: 2rem 0 0 2rem;
+      }
+    }
   }
 }
-
-// todo: 작은 화면 고려하기
