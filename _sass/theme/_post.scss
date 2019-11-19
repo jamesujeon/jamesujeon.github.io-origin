@@ -1,5 +1,5 @@
 .post {
-  padding: 3rem 0 5rem;
+  margin: 3rem 0 1rem;
 
   &-title {
     color: $post-title-color;
@@ -40,12 +40,8 @@
 
   &-pagination {
     @extend .pagination;
-    position: absolute !important;
-    bottom: 9rem;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 1.1rem;
-    margin: 0 !important;
+    height: .5rem;
+    margin: 3rem 0 0 !important;
 
     span {
       margin: 0 !important;
@@ -95,6 +91,14 @@
         }
       }
     }
+  }
+
+  #disqus_thread {
+    border: 1px solid $grey-2;
+    border-radius: 3px;
+    padding: 1rem;
+    padding-bottom: 0;
+    margin-top: 3rem;
   }
 
   .category-items {

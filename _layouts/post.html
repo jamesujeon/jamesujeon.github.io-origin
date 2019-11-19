@@ -24,6 +24,25 @@ layout: default
   </div>
 
   {{ content }}
+
+  {% if page.next.url or page.previous.url %}
+    <div class="post-pagination">
+      {% if page.next.url %}
+        <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">
+          <i class="fas fa-chevron-left fa-fw"></i>
+          <span class="left arrow-title">{{ page.next.title }}</span>
+        </a>
+      {% endif %}
+      {% if page.previous.url %}
+        <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">
+          <i class="fas fa-chevron-right fa-fw"></i>
+          <span class="right arrow-title">{{ page.previous.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% include comments.html %}
 </div>
 
 <button id="scrollToTop" class="top far fa-caret-square-up"></button>
