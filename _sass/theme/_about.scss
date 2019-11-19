@@ -1,29 +1,4 @@
 .about {
-  ul {
-    padding: 0;
-  }
-
-  li {
-    display: flex;
-    align-items: center;
-    word-spacing: 3px;
-    margin: 0 0 .5rem;
-
-    .fa-check-square {
-      margin: 0 .8rem 0 .3rem;
-    }
-
-    &.rank {
-      &-1 {
-        font-weight: bold;
-      }
-
-      &-3 {
-        opacity: .5;
-      }
-    }
-  }
-
   &-profile {
     &-image {
       display: flex;
@@ -130,6 +105,31 @@
 
       &-right {
         margin-top: 0;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    word-spacing: 3px;
+    margin: 0 0 .5rem;
+
+    .fa-check-square {
+      margin: 0 .8rem 0 .3rem;
+    }
+
+    &.rank {
+      &-1 {
+        font-weight: bold;
+      }
+
+      &-3 {
+        opacity: .5;
       }
     }
   }
