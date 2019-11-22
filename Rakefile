@@ -9,10 +9,11 @@ DEPLOY_URL = "https://github.com/jamesujeon/jamesujeon.github.io.git"
 
 desc "Build"
 task :build do
+  ENV["JEKYLL_ENV"] = "production"
+
   Jekyll::Site.new(Jekyll.configuration({
     "source"      => ".",
-    "destination" => "_site",
-    "mode"        => "production"
+    "destination" => "_site"
   })).process
 end
 
