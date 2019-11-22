@@ -58,3 +58,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+  - .backup
