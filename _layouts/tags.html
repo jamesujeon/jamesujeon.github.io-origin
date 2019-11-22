@@ -8,37 +8,39 @@ layout: default
   </div>
 </div>
 
-{% assign tags = site.tags | sort %}
-{% assign ranked_tags = site.tags | sort_tags_by_post_count %}
+{% if site.tags and site.tags.size > 0 %}
+  {% assign tags = site.tags | sort %}
+  {% assign ranked_tags = site.tags | sort_tags_by_post_count %}
 
-<div class="tag-cloud">
-  {% assign max_post_count = ranked_tags.first.last | size %}
-  {% for tag in tags %}
-    {% assign post_count_weight = tag.last | size | times: 1.0 | divided_by: max_post_count %}
-    {% if post_count_weight < 0.4 %}
-      {% assign post_count_weight = 0.4 %}
-    {% endif %}
+  <div class="tag-cloud">
+    {% assign max_post_count = ranked_tags.first.last | size %}
+    {% for tag in tags %}
+      {% assign post_count_weight = tag.last | size | times: 1.0 | divided_by: max_post_count %}
+      {% if post_count_weight < 0.4 %}
+        {% assign post_count_weight = 0.4 %}
+      {% endif %}
 
-    <span>
-      <a href="{{ tag[0] | prepend: '/' | prepend: page.url }}" class="tag-cloud-item"
-         style="font-size: {{ post_count_weight | times: 100 | plus: 50 }}%;
-                opacity: {{ post_count_weight | plus: 0.1 }};">
-        #{{ tag[0] }}
-      </a>
-    </span>
-  {% endfor %}
-</div>
-
-<div class="tag-rankings">
-  <div class="common-header-title">
-    <h2>Ranking</h2>
+      <span>
+        <a href="{{ tag[0] | prepend: '/' | prepend: page.url }}" class="tag-cloud-item"
+          style="font-size: {{ post_count_weight | times: 100 | plus: 50 }}%;
+                  opacity: {{ post_count_weight | plus: 0.1 }};">
+          #{{ tag[0] }}
+        </a>
+      </span>
+    {% endfor %}
   </div>
 
-  {% for tag in ranked_tags %}
-    <span>
-      <a href="{{ tag[0] | prepend: '/' | prepend: page.url }}" class="tag-item">
-        #{{ tag[0] }} ({{ tag.last | size }})
-      </a>
-    </span>
-  {% endfor %}
-</div>
+  <div class="tag-rankings">
+    <div class="common-header-title">
+      <h2>Ranking</h2>
+    </div>
+
+    {% for tag in ranked_tags %}
+      <span>
+        <a href="{{ tag[0] | prepend: '/' | prepend: page.url }}" class="tag-item">
+          #{{ tag[0] }} ({{ tag.last | size }})
+        </a>
+      </span>
+    {% endfor %}
+  </div>
+{% endif %}
