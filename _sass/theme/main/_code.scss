@@ -4,14 +4,15 @@ code {
 }
 
 code {
-  background-color: $grey-3;
   border-radius: 3px;
-  color: $code-color;
-  font-size: 85%;
+  background-color: #272b33;
+  color: #f8f8f2;
+  font-size: 90%;
   padding: .25em .5em;
 }
 
 pre {
+  vertical-align: middle;
   margin: 0 0 1rem;
 }
 
@@ -23,8 +24,8 @@ pre code {
 }
 
 .highlight {
-  background-color: $grey-3;
   border-radius: 3px;
+  background-color: $grey-3;
   line-height: 1.4;
   margin: 0 0 1rem;
   padding: 1rem;

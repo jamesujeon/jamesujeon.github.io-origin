@@ -23,6 +23,7 @@ social:
 
 # Build settings
 markdown:       kramdown
+highlighter:    rouge
 include:
   - _pages
 
