@@ -110,8 +110,9 @@
   }
 
   p {
-    margin: 0 0 1rem;
     text-align: justify;
+    line-height: 1.8;
+    margin: 0 0 1rem;
   }
 
   a:hover {
@@ -144,6 +145,10 @@
     vertical-align: text-top;
     padding: 0;
     margin: 0;
+  }
+
+  hr {
+    margin-block-start: 3em;
   }
 }
 
