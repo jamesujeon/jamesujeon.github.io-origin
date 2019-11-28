@@ -38,10 +38,7 @@
       }
 
       &-contacts {
-        h4 {
-          font-family: $sans-serif;
-          margin: 2rem 0 .8rem 0;
-        }
+        margin-top: 3rem;
 
         i,
         a {
@@ -57,6 +54,7 @@
         span {
           font-family: $monospaced;
           font-size: .9rem;
+          word-spacing: normal;
           margin-left: .6rem;
         }
       }
