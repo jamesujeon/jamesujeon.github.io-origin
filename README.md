@@ -9,4 +9,4 @@ Original sources are here, https://github.com/jamesujeon/jamesujeon.github.io-or
 
 | Version | Updated Date | Description      |
 | ------- | ------------ | ---------------- |
-| 1.0.0   | ????.??.??   | Initial version. |
+| 1.0.0   | 2019.11.28   | Initial version. |
