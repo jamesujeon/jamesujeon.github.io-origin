@@ -4,7 +4,6 @@ title:  "Codeforces 코딩 문제 풀기: 4A - Watermelon"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
 tags: [coding-problem, codeforces, python]
-title_image: codeforces_title.png
 ---
 
 ![4A - Watermelon](assets/codeforces_4a_watermelon.png "4A - Watermelon")
