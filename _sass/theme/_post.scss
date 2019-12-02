@@ -13,7 +13,7 @@
     }
 
     &-image {
-      margin: -3rem -1rem 2rem;
+      margin: calc(-3rem + 1px) -1rem 2rem;
 
       img {
         width: 100%;
@@ -21,7 +21,7 @@
       }
 
       @media (min-width: 600px) {
-        margin: -3rem 0 2rem;
+        margin: calc(-3rem + 1px) 0 2rem;
       }
     }
   }
