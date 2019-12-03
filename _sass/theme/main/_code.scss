@@ -32,6 +32,9 @@ pre code {
 
   pre {
     margin-bottom: 0;
+  }
+
+  > pre {
     overflow-x: auto;
   }
 
