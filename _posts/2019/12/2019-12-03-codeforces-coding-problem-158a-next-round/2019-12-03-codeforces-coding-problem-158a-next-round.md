@@ -54,11 +54,10 @@ print(advancer_count)
 Python으로 표현하면,  
 `not (A or B) == not A and not B`이고, `not (A and B) == not A or not B`이다.
 
-위 코드에서 `score > 0 and score >= scores[k - 1]`의 부정은 `not (score > 0 and score >= scores[k - 1])`이지만,  
-드 모르간의 법칙을 적용해 각각의 부정을 `or` 연산한 것으로 대체할 수 있다.
+위 코드에서 `score > 0 and score >= scores[k - 1]`의 부정은 `not (score > 0 and score >= scores[k - 1])`이지만, 드 모르간의 법칙을 적용해 각각의 부정을 `or` 연산한 것으로 대체할 수 있다.
 
-`score > 0`의 부정은 `score <= 0`이지만, 이 문제에서는 0 이하로는 입력될 수 없으므로 `score is 0`로 표현해도 된다.  
-또한, `score >= scores[k - 1]`의 부정은 `score < scores[k - 1]`이 된다.  
+`score > 0`의 부정은 `score <= 0`이지만, 이 문제에서는 0 이하로는 입력될 수 없으므로 `score is 0`로 표현해도 된다. 또한, `score >= scores[k - 1]`의 부정은 `score < scores[k - 1]`이 된다.
+
 결론적으로 다음과 같이 작성할 수 있다.
 
 {% highlight python linenos %}
