@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ site.title | prepend: ' - ' | prepend: page.title }}</title>
+    <title>{{ site.title }}</title>
+
+    {% seo title=false %}
+
+    <!-- Additional SEO -->
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/icon/favicon-32x32.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/icon/favicon-16x16.png" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/icon/apple-touch-icon.png" | relative_url }}">
+    <link rel="manifest" href="{{ "/assets/icon/site.webmanifest" | relative_url }}">
+
+    <!-- Google Analytics-->
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
 
     <meta http-equiv="refresh" content="0; url={{ site.home_path | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ site.home_path | prepend: site.baseurl }}">
