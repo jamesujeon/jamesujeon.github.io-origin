@@ -31,3 +31,12 @@ if weight % 2 is 0 and weight is not 2:
 else:
   print("NO")
 {% endhighlight %}
+
+문제 풀이 환경: Kotlin 1.3.61 (2019.12.10 추가)
+
+{% highlight kotlin linenos %}
+fun main(args: Array<String>) {
+    val weight = readLine()!!.toInt()
+    println(if (weight % 2 == 0 && weight != 2) "YES" else "NO")
+}
+{% endhighlight %}
