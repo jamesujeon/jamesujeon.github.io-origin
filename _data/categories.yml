@@ -1,3 +1,8 @@
+infra:
+  name: "Infra"
+  children:
+    virtualization:
+      name: "Virtualization"
 etc:
   name: "Etc"
   children:
