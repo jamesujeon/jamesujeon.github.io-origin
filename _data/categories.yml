@@ -3,6 +3,8 @@ infra:
   children:
     virtualization:
       name: "Virtualization"
+    os:
+      name: "OS"
 etc:
   name: "Etc"
   children:
