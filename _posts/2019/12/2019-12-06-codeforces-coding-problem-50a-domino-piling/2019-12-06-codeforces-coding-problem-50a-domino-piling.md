@@ -8,14 +8,14 @@ tags: [coding-problem, codeforces, python]
 
 ![50A - Domino piling](assets/codeforces_50a_domino_piling.png "50A - Domino piling")
 
-# 문제 파악
+## 문제 파악
 
 [Domino piling 문제 링크](http://codeforces.com/problemset/problem/50/A){:target="_blank"}
 
 2 x 1 크기의 도미노 조각을 이용해 M x N 크기의 판을 채울 때, 필요한 최대 도미노 조각 수를 구한다.  
 이때, 도미노 조각은 서로 겹칠 수 없으며, 판 안에 존재해야 한다.
 
-# 문제 풀이
+## 문제 풀이
 
 조각의 긴 변이 높이가 되도록 세운 후, 판의 좌상단 부분부터 채운다.  
 여기서 긴 변은 2가 되고, 1 크기의 변으로 한 줄부터 채운다고 생각하면, 판의 너비와 동일하게 된다.  
@@ -59,7 +59,7 @@ print(result)
 왜냐하면, 좌상단 부분부터 최대한 채워서 남는 영역은 판의 마지막 줄의 우측 부분이기 때문이다.  
 (항상 마지막 줄을 제외한 나머지 줄을 꽉 채울 수 있다.)
 
-# 풀이 소스
+## 풀이 소스
 
 문제 풀이 환경: Python 3.7
 

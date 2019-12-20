@@ -8,7 +8,7 @@ tags: [coding-problem, codeforces, python]
 
 ![118A - String Task](assets/codeforces_118a_string_task.png "118A - String Task")
 
-# 문제 파악
+## 문제 파악
 
 [String Task 문제 링크](http://codeforces.com/problemset/problem/118/A){:target="_blank"}
 
@@ -18,7 +18,7 @@ tags: [coding-problem, codeforces, python]
 - 각 자음 앞에 점 문자(".")를 하나 추가한다.
 - 모든 대문자는 소문자로 변환한다.
 
-# 문제 풀이
+## 문제 풀이
 
 원활한 처리를 위해 규칙을 순차적으로 적용하는 것이 아닌 효율적인 순서로 적용할 수 있다.
 
@@ -28,7 +28,7 @@ tags: [coding-problem, codeforces, python]
 조인할 때 첫 글자 앞에는 점 문자가 삽입되지 않으므로, 마지막에 점 문자를 문자열 앞에 추가한다.  
 이때, 문자열이 존재하는 경우에만 점 문자를 추가하도록 한다.
 
-# 전체 소스
+## 풀이 소스
 
 문제 풀이 환경: Python 3.7
 

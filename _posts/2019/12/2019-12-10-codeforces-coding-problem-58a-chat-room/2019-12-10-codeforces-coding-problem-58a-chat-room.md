@@ -8,7 +8,7 @@ tags: [coding-problem, codeforces, python]
 
 ![58A - Chat room](assets/codeforces_58a_chat_room.png "58A - Chat room")
 
-# 문제 파악
+## 문제 파악
 
 [Chat room 문제 링크](http://codeforces.com/problemset/problem/58/A){:target="_blank"}
 
@@ -19,7 +19,7 @@ tags: [coding-problem, codeforces, python]
 "ahhellllloou" 문자열은 2번째 'h', 4번째 'e', 5~6번째 "ll", 10번째 'o'까지 차례대로 존재하므로 "YES"를 출력한다.  
 반면에, "hlelo" 문자열은 1번째 'h', 3번째 'e', 4번째 'l'까지 만족하지만, 그 이후로 다른 'l'이 없어 "NO"를 출력한다.
 
-# 문제 풀이
+## 문제 풀이
 
 이 문제는 [탐욕(Greedy) 알고리즘](https://en.wikipedia.org/wiki/Greedy_algorithm)으로 해결할 수도 있지만, [정규 표현식(정규식, Regular Expression, regex)](https://ko.wikipedia.org/wiki/%EC%A0%95%EA%B7%9C_%ED%91%9C%ED%98%84%EC%8B%9D)을 이용하면 더 쉽게 해결할 수 있다.
 
@@ -48,7 +48,7 @@ tags: [coding-problem, codeforces, python]
 
 Python에서 `re` 모듈을 통해 위 정규식에 해당하는 부분 문자열을 검색해, 조건을 만족하는지 판단할 수 있다.
 
-# 풀이 소스
+## 풀이 소스
 
 문제 풀이 환경: Python 3.7
 

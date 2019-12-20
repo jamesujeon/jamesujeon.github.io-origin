@@ -8,7 +8,7 @@ tags: [coding-problem, codeforces, python]
 
 ![158A - Next Round](assets/codeforces_158a_next_round.png "158A - Next Round")
 
-# 문제 파악
+## 문제 파악
 
 [Next Round 문제 링크](http://codeforces.com/problemset/problem/158/A){:target="_blank"}
 
@@ -17,12 +17,12 @@ k번째의 점수 이상이면, 다음 라운드로 넘어갈 수 있다.
 
 점수가 양수이면서 k번째의 점수 이상인 사람 수를 세면 된다.
 
-# 문제 풀이
+## 문제 풀이
 
 두 번째 열의 입력을 배열로 받으면, k번째의 점수를 쉽게 얻을 수 있다.  
 입력받은 점수 배열을 순회하면서 조건에 맞는 경우, 사람 수를 증가시킨다.
 
-# 전체 소스
+## 풀이 소스
 
 문제 풀이 환경: Python 3.7
 
@@ -38,7 +38,7 @@ for score in scores:
 print(advancer_count)
 {% endhighlight %}
 
-# 리팩토링
+## 리팩토링
 
 위 코드는 항상 입력받은 점수 배열의 요소를 모두 순회하도록 되어 있다.  
 이를 개선시켜 **반대 조건일 때 순회를 중지**하도록 해 불필요한 순회를 하지 않도록 한다.

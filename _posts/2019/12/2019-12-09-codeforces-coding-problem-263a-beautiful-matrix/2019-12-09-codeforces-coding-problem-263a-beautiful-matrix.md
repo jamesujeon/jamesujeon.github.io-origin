@@ -8,7 +8,7 @@ tags: [coding-problem, codeforces, python]
 
 ![263A - Beautiful Matrix](assets/codeforces_263a_beautiful_matrix.png "263A - Beautiful Matrix")
 
-# 문제 파악
+## 문제 파악
 
 [Beautiful Matrix 문제 링크](http://codeforces.com/problemset/problem/263/A){:target="_blank"}
 
@@ -16,7 +16,7 @@ tags: [coding-problem, codeforces, python]
 1이 배열의 정가운데에 위치하게 하기 위해, 반복적으로 인접해 있는 요소끼리 자리를 1칸씩 바꿀 수 있다.  
 이때, 그렇게 하기 위해 필요한 최소 이동 수를 구해야 한다.
 
-# 문제 풀이
+## 문제 풀이
 
 이 문제에서 자리를 바꾸는 방향이 제약되어 있다던지 등과 같은 특별한 제약이 걸려있지 않다.  
 따라서, 단순히 이동 거리만 계산하면 되고 목적지가 정해져 있으므로, 1의 위치를 구해 정가운데와의 거리를 구하면 된다.
@@ -31,7 +31,7 @@ tags: [coding-problem, codeforces, python]
 
 그래프에서 두 점의 거리는 두 점의 차이의 절댓값과 같기 때문에, 정가운데 위치를 빼고 `abs()` 함수로 절댓값을 구한다.
 
-# 풀이 소스
+## 풀이 소스
 
 문제 풀이 환경: Python 3.7
 

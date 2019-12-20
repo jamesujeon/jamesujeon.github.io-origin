@@ -8,7 +8,7 @@ tags: [coding-problem, codeforces, python]
 
 ![158B - Taxi](assets/codeforces_158b_taxi.png "158B - Taxi")
 
-# 문제 파악
+## 문제 파악
 
 [Taxi 문제 링크](http://codeforces.com/problemset/problem/158/B){:target="_blank"}
 
@@ -32,7 +32,7 @@ tags: [coding-problem, codeforces, python]
 
 다수의 그룹이 같이 탈 수 있는 경우를 고려해야 한다.
 
-# 문제 풀이
+## 문제 풀이
 
 문제의 예시에서도 힌트가 주어졌듯이, 택시를 채울 수 있는 경우의 수를 하나씩 생각해가며 문제를 해결할 수 있다.  
 이렇게 그때그때 최적의 답을 구해서, 최종적으로 최적의 해답을 구하는 방식을 [탐욕(Greedy) 알고리즘](https://en.wikipedia.org/wiki/Greedy_algorithm)이라 한다.  
@@ -58,7 +58,7 @@ tags: [coding-problem, codeforces, python]
 첫 줄의 입력은 사용하지 않아도 되므로, 무시하도록 처리했다. (`_ = input()`)  
 `_` 변수는 사용하려면 사용할 수 있지만, Python에서는 **대입되는 값을 무시하는 용도**로 많이 사용된다.
 
-# 풀이 소스
+## 풀이 소스
 
 문제 풀이 환경: Python 3.7
 
