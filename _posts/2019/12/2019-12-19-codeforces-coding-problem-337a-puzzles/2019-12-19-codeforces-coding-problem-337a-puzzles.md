@@ -8,7 +8,7 @@ tags: [coding-problem, codeforces, python]
 
 ![337A - Puzzles](assets/codeforces_337a_puzzles.png "337A - Puzzles")
 
-# 문제 파악
+## 문제 파악
 
 [Puzzles 문제 링크](http://codeforces.com/problemset/problem/337/A){:target="_blank"}
 
@@ -16,7 +16,7 @@ tags: [coding-problem, codeforces, python]
 학생 수에 맞춰 다수의 직소 퍼즐을 구매할 때, **퍼즐 간의 최대 조각 수 차이가 가장 작을 때의 조각 수 차이**를 구해야 한다.  
 판매하는 퍼즐의 수는 학생 수보다 크거나 같으므로, 퍼즐 간의 최대 조각 수 차이는 여러 경우가 나올 수 있기 때문이다.
 
-# 문제 풀이
+## 문제 풀이
 
 [탐욕(Greedy) 알고리즘](https://en.wikipedia.org/wiki/Greedy_algorithm)의 접근 방식을 이용해 풀이할 수 있다.  
 각 경우에서 최적해를 먼저 구하고, 구한 최적해들을 이용해 최종 최적해를 구한다.
@@ -38,7 +38,7 @@ tags: [coding-problem, codeforces, python]
 
 따라서, 정답에 해당하는 퍼즐 그룹은 `5 7 10 10` 또는 `7 10 10 12`가 되고, 가장 작은 값은 `5`가 된다.
 
-# 풀이 소스
+## 풀이 소스
 
 문제 풀이 환경: Python 3.7
 

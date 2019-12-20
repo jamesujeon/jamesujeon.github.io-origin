@@ -7,14 +7,14 @@ tags: [jekyll, github-pages]
 title_image: octojekyll_title.png
 ---
 
-# Jekyll 환경설정 파일이란?
+## Jekyll 환경설정 파일이란?
 
 Jekyll은 정적 사이트 생성을 위한 다양한 옵션이 준비되어 있다.  
 옵션은 루트 경로에 있는 `_config.yml` 파일에 해당하는 환경설정 파일을 통해 설정할 수 있다.  
 해당 파일은 [YAML](https://ko.wikipedia.org/wiki/YAML){:target="_blank"} 형식을 따르며, YAML 문법은 정말 간단하므로 쉽게 적응할 수 있다.  
 이렇게 설정한 환경설정 옵션은 **사이트 생성 시점**에 반영된다.
 
-# `_config.yml` 파일 분석
+## `_config.yml` 파일 분석
 
 환경설정 옵션은 Jekyll에서 제공하는 옵션, 각종 플러그인에서 사용하는 옵션, 사용자 정의 옵션이 있다.  
 현재 접속해 있는 사이트의 환경설정 파일을 보면, 어떤 옵션이 있는지 확인할 수 있다.
@@ -92,7 +92,7 @@ exclude:
 `pagination`의 하위 옵션들은 jekyll-paginate-v2 플러그인을 위한 옵션으로, 페이지 처리에 대한 옵션을 제공한다.  
 마지막으로, `home_path` 옵션은 사용자가 직접 홈 경로로 이용하기 위해 설정한 사용자 정의 옵션이다.
 
-# 환경설정 옵션 사용하기
+## 환경설정 옵션 사용하기
 
 `_config.yml` 파일에 설정한 옵션들을 직접 접근해 사용할 수 있을까?  
 레이아웃을 구성할 때, [Liquid](https://shopify.github.io/liquid){:target="_blank"} 문법을 통해 사용할 수 있다.
@@ -116,6 +116,6 @@ Jekyll은 전역적인 `site` 변수를 제공한다.
 또한, 코드 중복을 피하고 가독성이 좋아지므로, 유지보수가 용이해진다.  
 따라서 필요한 옵션이 있다면, `_config.xml` 파일을 적극 활용하도록 하자.
 
-# 한 줄 요약
+## 한 줄 요약
 
 `_config.xml` 파일에 환경설정 옵션을 설정하고, `site` 변수를 통해 사용하자.
