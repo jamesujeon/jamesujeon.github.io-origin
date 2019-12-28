@@ -125,6 +125,7 @@ main,
 }
 
 footer {
+  cursor: default;
   border-top: 1px solid $grey-2;
   border-bottom: 1px solid $grey-2;
   background-color: $grey-3;
@@ -139,11 +140,15 @@ footer {
     font-size: .8rem;
   }
 
+  a {
+    display: inline-block;
+    margin-top: .8rem;
+  }
+
   i {
     @include transition(all .2s ease-out);
     color: $default-color;
     font-size: 1.5rem;
-    margin-top: .8rem;
 
     @media (min-width: 600px) {
       &:hover {
@@ -153,6 +158,6 @@ footer {
   }
 
   .mailto-wrapper {
-    margin-right: .3rem;
+    margin-right: .1rem;
   }
 }
