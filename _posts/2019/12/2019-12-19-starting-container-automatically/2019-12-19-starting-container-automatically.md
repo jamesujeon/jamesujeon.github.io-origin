@@ -53,7 +53,7 @@ Docker 재시작 시간에 맞춰 `test` 컨테이너도 재시작된 것을 확
 - `always` : 항상 재시작한다. 수동으로 종료한 경우, Docker가 재시작되면 같이 재시작된다.
 - `unless-stopped` : 컨테이너가 종료되지 않는다면, 항상 재시작하한다. 종료되었다면, 직접 시작하기 전까지는 Docker가 재시작되도 컨테이너는 재시작되지 않는다.
 
-자세한 내용은 [Docker Documentation](https://docs.docker.com/config/containers/start-containers-automatically/)에서 확인할 수 있다. (영어 주의 ⚠️)
+자세한 내용은 [Docker Documentation][Docker Documentation]{:target="_blank"}에서 확인할 수 있다. (영어 주의 ⚠️)
 
 ## 그 외 방법
 
@@ -65,3 +65,5 @@ Docker 재시작 시간에 맞춰 `test` 컨테이너도 재시작된 것을 확
 
 취향에 따라 방법을 선택해 적용하도록 한다.  
 참고로 서비스 파일을 작성한다면, OS마다 서비스 등록법이 상이할 수 있으니 유의해서 적용하길 바란다.
+
+[Docker Documentation]: https://docs.docker.com/config/containers/start-containers-automatically/

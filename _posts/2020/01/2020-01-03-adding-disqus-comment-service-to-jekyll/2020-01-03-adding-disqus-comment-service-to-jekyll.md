@@ -17,12 +17,12 @@ Jekyll을 통해 생성한 블로그는 **정적으로 생성된 블로그**이�
 여기서는 많은 GitHub Pages 블로그에서 사용하고 있는 Disqus 댓글 서비스를 연동하도록 한다.
 
 Disqus에서 제공하는 댓글 서비스는 간단한 블로그를 위해서는 무료 정책으로 충분하다.  
-혹시 다른 부가적인 기능이나 특징이 필요하다면, [여기](https://disqus.com/pricing/)에서 가격 정책을 확인할 수 있다.
+혹시 다른 부가적인 기능이나 특징이 필요하다면, [여기][Disqus 가격 정책]{:target="_blank"}에서 가격 정책을 확인할 수 있다.
 
 ## Disqus 가입 및 설정
 
 블로그는 이미 준비되어 있다고 가정하고, 일단 Disqus에 가입해서 블로그 정보를 설정해야 한다.  
-[Disqus](https://disqus.com/)에 접속해 이메일 또는 페이스북, 트위터, 구글 등의 계정을 통해 가입한다.
+[Disqus][Disqus]{:target="_blank"}에 접속해 이메일 또는 페이스북, 트위터, 구글 등의 계정을 통해 가입한다.
 
 가입 후에 홈페이지에서 'GET STARTED' > 'I want to install Disqus on my site' 순서로 버튼을 누른다.  
 생성 화면에서 'Website Name'은 Disqus의 관리자 사이트로 이용되므로 블로그와 관련된 이름으로 작성한다.  
@@ -96,7 +96,7 @@ Disqus에서 제공하는 댓글 서비스는 간단한 블로그를 위해서�
 `jamesu-blog` 대신, 해당하는 **관리자 사이트 URL**을 입력하도록 한다.
 
 그리고 Disqus는 다음과 같은 추가 작업을 추천한다.  
-(전체 내용은 [이 문서](https://help.disqus.com/en/articles/1717137-use-configuration-variables-to-avoid-split-threads-and-missing-comments)를 참고한다.)
+(전체 내용은 [이 문서][Disqus split threads 문제]{:target="_blank"}를 참고한다.)
 
 > This works well for some sites, however, this method of creating threads can lead to duplicate “split threads” for the same page of content, especially when your site accepts many different URLs for the same page of content.
 
@@ -146,7 +146,7 @@ Disqus에서 제공하는 댓글 서비스는 간단한 블로그를 위해서�
 ## 그 외 활용
 
 기본적인 댓글 기능은 위와 같이 설정해서 사용할 수 있다.  
-만약, 포스트별로 댓글 기능의 사용 유무를 정하고 싶다면, [YAML Front Matter](https://jekyllrb.com/docs/front-matter/)의 변수를 이용하면 된다.  
+만약, 포스트별로 댓글 기능의 사용 유무를 정하고 싶다면, [YAML Front Matter][YAML Front Matter]{:target="_blank"}의 변수를 이용하면 된다.  
 
 {% highlight html linenos %}
 ---
@@ -187,3 +187,8 @@ comments: true
 또한, Disqus 관리자 사이트에서 댓글을 확인하고 관리할 수 있으므로 활용하길 바란다.
 
 성공적으로 댓글 서비스를 연동해 이용하길 바라며, 더불어 본 블로그도 댓글이 활성화되길 바란다. 😅
+
+[Disqus]: https://disqus.com/
+[Disqus 가격 정책]: https://disqus.com/pricing/
+[Disqus split threads 문제]: https://help.disqus.com/en/articles/1717137-use-configuration-variables-to-avoid-split-threads-and-missing-comments
+[YAML Front Matter]: https://jekyllrb.com/docs/front-matter/
