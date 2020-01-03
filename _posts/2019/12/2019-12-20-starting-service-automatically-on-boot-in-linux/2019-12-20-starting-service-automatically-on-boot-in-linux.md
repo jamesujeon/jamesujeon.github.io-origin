@@ -7,7 +7,7 @@ tags: [linux, command]
 title_image: linux_tux_title.png
 ---
 
-[이전 글](https://jamesu.dev/posts/2019/12/19/start-containers-automatically/)에서 Docker 컨테이너를 자동으로 시작하는 법을 알았다.  
+[이전 글][이전 글]{:target="_blank"}에서 Docker 컨테이너를 자동으로 시작하는 법을 알았다.  
 그렇다면, 서버가 죽었을 때 Docker가 시작되어야 Docker 컨테이너 또한 재시작을 할 수 있지 않을까?
 
 이 글에서는 Docker를 자주 사용하는 OS인 Linux 상에서 서비스를 자동으로 시작하는 법을 알아보도록 한다.  
@@ -40,3 +40,5 @@ title_image: linux_tux_title.png
 - 자동 시작 확인 : `chkconfig 서비스명 --list` 또는 `systemctl is-enabled 서비스명`
 - 자동 시작 설정 : `chkconfig 서비스명 on` 또는 `systemctl enable 서비스명`
 - 자동 시작 해제 : `chkconfig 서비스명 off` 또는 `systemctl disable 서비스명`
+
+[이전 글]: https://jamesu.dev/posts/2019/12/19/starting-container-automatically/
