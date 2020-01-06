@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Codeforces 코딩 문제 풀기: 1A - Theatre Square"
+title:  "Codeforces 문제 풀이: 1A - Theatre Square"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [problem-solving, codeforces, python]
 ---
 
 ![1A - Theatre Square](assets/codeforces_1a_theatre_square.png "1A - Theatre Square")

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Codeforces 코딩 문제 풀기: 263A - Beautiful Matrix"
+title:  "Codeforces 문제 풀이: 263A - Beautiful Matrix"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [problem-solving, codeforces, python]
 ---
 
 ![263A - Beautiful Matrix](assets/codeforces_263a_beautiful_matrix.png "263A - Beautiful Matrix")
