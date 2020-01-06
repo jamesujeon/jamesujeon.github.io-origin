@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Codeforces 코딩 문제 풀기: 50A - Domino piling"
+title:  "Codeforces 문제 풀이: 50A - Domino piling"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [problem-solving, codeforces, python]
 ---
 
 ![50A - Domino piling](assets/codeforces_50a_domino_piling.png "50A - Domino piling")

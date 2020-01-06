@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Codeforces 코딩 문제 풀기: 158A - Next Round"
+title:  "Codeforces 문제 풀이: 158A - Next Round"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [problem-solving, codeforces, python]
 ---
 
 ![158A - Next Round](assets/codeforces_158a_next_round.png "158A - Next Round")

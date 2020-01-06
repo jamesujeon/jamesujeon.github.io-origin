@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Codeforces 코딩 문제 풀기: 118A - String Task"
+title:  "Codeforces 문제 풀이: 118A - String Task"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [problem-solving, codeforces, python]
 ---
 
 ![118A - String Task](assets/codeforces_118a_string_task.png "118A - String Task")

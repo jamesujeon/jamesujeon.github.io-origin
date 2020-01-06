@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Codeforces 코딩 문제 풀기: 71A - Way Too Long Words"
+title:  "Codeforces 문제 풀이: 71A - Way Too Long Words"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [problem-solving, codeforces, python]
 ---
 
 ![71A - Way Too Long Words](assets/codeforces_71a_way_too_long_words.png "71A - Way Too Long Words")

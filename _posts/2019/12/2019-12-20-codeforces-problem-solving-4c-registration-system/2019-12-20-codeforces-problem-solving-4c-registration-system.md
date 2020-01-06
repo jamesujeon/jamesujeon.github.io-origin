@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Codeforces 코딩 문제 풀기: 4C - Registration system"
+title:  "Codeforces 문제 풀이: 4C - Registration system"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [problem-solving, codeforces, python]
 ---
 
 ![4C - Registration system](assets/codeforces_4c_registration_system.png "4C - Registration system")

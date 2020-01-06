@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Codeforces 코딩 문제 풀기: 4A - Watermelon"
+title:  "Codeforces 문제 풀이: 4A - Watermelon"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python, kotlin]
+tags: [problem-solving, codeforces, python, kotlin]
 ---
 
 ![4A - Watermelon](assets/codeforces_4a_watermelon.png "4A - Watermelon")
