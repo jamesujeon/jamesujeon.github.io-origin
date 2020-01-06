@@ -184,9 +184,7 @@ comments: true
 {% endhighlight %}
 
 이 밖에도 Disqus는 댓글 서비스와 관련해서 다양한 옵션을 제공하므로, 홈페이지를 참고하길 바란다.  
-또한, Disqus 관리자 사이트에서 댓글을 확인하고 관리할 수 있으므로 활용하길 바란다.
-
-성공적으로 댓글 서비스를 연동해 이용하길 바라며, 더불어 본 블로그도 댓글이 활성화되길 바란다. 😅
+또한, Disqus 관리자 사이트를 이용하면 댓글을 확인하고 관리할 수 있으므로 적극 활용하길 바란다. 👍
 
 [Disqus]: https://disqus.com/
 [Disqus 가격 정책]: https://disqus.com/pricing/
