@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces 코딩 문제 풀기: 337A - Puzzles"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [coding-problem, codeforces, greedy-algorithm, python]
 ---
 
 ![337A - Puzzles](assets/codeforces_337a_puzzles.png "337A - Puzzles")

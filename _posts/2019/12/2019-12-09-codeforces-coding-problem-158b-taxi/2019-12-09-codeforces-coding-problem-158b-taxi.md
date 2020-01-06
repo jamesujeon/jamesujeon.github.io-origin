@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces 코딩 문제 풀기: 158B - Taxi"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [coding-problem, codeforces, greedy-algorithm, python]
 ---
 
 ![158B - Taxi](assets/codeforces_158b_taxi.png "158B - Taxi")

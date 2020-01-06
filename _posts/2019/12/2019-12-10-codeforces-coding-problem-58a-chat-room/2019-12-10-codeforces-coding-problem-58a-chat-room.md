@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces 코딩 문제 풀기: 58A - Chat room"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [coding-problem, codeforces, python]
+tags: [coding-problem, codeforces, greedy-algorithm, regex, python]
 ---
 
 ![58A - Chat room](assets/codeforces_58a_chat_room.png "58A - Chat room")
