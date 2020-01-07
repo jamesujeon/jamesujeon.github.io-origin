@@ -18,7 +18,7 @@ tags: [problem-solving, codeforces, greedy-algorithm, python]
 
 ## 문제 풀이
 
-[탐욕(Greedy) 알고리즘](https://en.wikipedia.org/wiki/Greedy_algorithm)의 접근 방식을 이용해 풀이할 수 있다.  
+[탐욕(Greedy) 알고리즘][탐욕 알고리즘]{:target="_blank"}의 접근 방식을 이용해 풀이할 수 있다.  
 각 경우에서 최적해를 먼저 구하고, 구한 최적해들을 이용해 최종 최적해를 구한다.
 
 무작위로 학생 수에 맞춰 퍼즐을 선택하는 것은 경우의 수가 너무 많고 효율이 떨어진다.  
@@ -50,3 +50,5 @@ result = min(counts[i + n - 1] - counts[i] for i in range(len(counts) - n + 1))
 
 print(result)
 {% endhighlight %}
+
+[탐욕 알고리즘]: https://en.wikipedia.org/wiki/Greedy_algorithm
