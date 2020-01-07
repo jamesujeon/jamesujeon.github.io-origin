@@ -35,7 +35,7 @@ tags: [problem-solving, codeforces, greedy-algorithm, python]
 ## 문제 풀이
 
 문제의 예시에서도 힌트가 주어졌듯이, 택시를 채울 수 있는 경우의 수를 하나씩 생각해가며 문제를 해결할 수 있다.  
-이렇게 그때그때 최적의 답을 구해서, 최종적으로 최적의 해답을 구하는 방식을 [탐욕(Greedy) 알고리즘](https://en.wikipedia.org/wiki/Greedy_algorithm)이라 한다.  
+이렇게 그때그때 최적의 답을 구해서, 최종적으로 최적의 해답을 구하는 방식을 [탐욕(Greedy) 알고리즘][탐욕 알고리즘]{:target="_blank"}이라 한다.  
 이 알고리즘은 **지역적으로 최적이면서 전역적으로 최적인 문제**에만 적용할 수 있다.
 
 이 문제에서 택시의 최대 탑승 가능 인원 수는 정해져 있고, 그룹이 몇 명으로 구성되어 있는 지 알 수 있다.  
@@ -73,3 +73,5 @@ taxi_count = c4 + c3 + ceil(c2 / 2) + ceil(c1 / 4)
 
 print(taxi_count)
 {% endhighlight %}
+
+[탐욕 알고리즘]: https://en.wikipedia.org/wiki/Greedy_algorithm

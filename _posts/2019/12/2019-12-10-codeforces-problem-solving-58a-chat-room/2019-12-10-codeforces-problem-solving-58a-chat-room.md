@@ -21,7 +21,8 @@ tags: [problem-solving, codeforces, greedy-algorithm, regex, python]
 
 ## 문제 풀이
 
-이 문제는 [탐욕(Greedy) 알고리즘](https://en.wikipedia.org/wiki/Greedy_algorithm)으로 해결할 수도 있지만, [정규 표현식(정규식, Regular Expression, regex)](https://ko.wikipedia.org/wiki/%EC%A0%95%EA%B7%9C_%ED%91%9C%ED%98%84%EC%8B%9D)을 이용하면 더 쉽게 해결할 수 있다.
+이 문제는 [탐욕(Greedy) 알고리즘][탐욕 알고리즘]{:target="_blank"}으로 해결할 수도 있지만,
+[정규 표현식(정규식, Regular Expression, regex)][정규 표현식]{:target="_blank"}을 이용하면 더 쉽게 해결할 수 있다.
 
 ### 탐욕 알고리즘
 
@@ -57,3 +58,6 @@ import re
 
 print('YES' if re.search(r'h.*e.*l.*l.*o', input()) else 'NO')
 {% endhighlight %}
+
+[탐욕 알고리즘]: https://en.wikipedia.org/wiki/Greedy_algorithm
+[정규 표현식]: https://ko.wikipedia.org/wiki/%EC%A0%95%EA%B7%9C_%ED%91%9C%ED%98%84%EC%8B%9D

@@ -21,7 +21,7 @@ tags: [problem-solving, codeforces, python]
 ## 문제 풀이
 
 중복되는 이름이 다수인 경우에 차례대로 숫자를 증가시켜 추가해야 하므로, 중복될 때마다 그 수를 기억해야 한다.  
-그러면, 저장할 데이터는 이름과 중복 수가 되고, 이를 효율적으로 관리하기 위해 [해시](https://namu.wiki/w/%ED%95%B4%EC%8B%9C) 테이블을 사용할 수 있다.
+그러면, 저장할 데이터는 이름과 중복 수가 되고, 이를 효율적으로 관리하기 위해 [해시][해시]{:target="_blank"} 테이블을 사용할 수 있다.
 
 **해시 테이블**은 Key-Value 구조로 데이터를 보관하는 자료구조로, Key를 위해 해시 함수를 이용한다.  
 일반적으로 별도의 해시 함수를 구현하지 않으면, 객체의 주소값 등을 Key로 이용할 수 있다.
@@ -54,3 +54,5 @@ for i, name in enumerate(names):
 for name in names:
   print(name)
 {% endhighlight %}
+
+[해시]: https://namu.wiki/w/%ED%95%B4%EC%8B%9C

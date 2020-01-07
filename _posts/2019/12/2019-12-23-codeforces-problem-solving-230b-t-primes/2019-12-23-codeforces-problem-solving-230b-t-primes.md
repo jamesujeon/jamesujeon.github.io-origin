@@ -27,7 +27,7 @@ tags: [problem-solving, codeforces, python]
 2. 대상 수의 제곱근을 **정수화**하고 다시 제곱했을 때, 본래의 수와 동일해야 한다. (제곱근이 정수여야 한다.)
 
 이때, 제곱근이 소수인지 판별하는 로직이 필요하다.  
-공간이 충분할 때, 효율적이고 빠른 방법으로 [에라토스테네스의 체(Sieve of Eratosthenes)](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)가 있다.
+공간이 충분할 때, 효율적이고 빠른 방법으로 [에라토스테네스의 체(Sieve of Eratosthenes)][에라토스테네스의 체]{:target="_blank"}가 있다.
 
 에라토스테네스의 체는 **특정 범위의 수를 체로 걸러내듯이 소수가 아닌 수를 걸러 소수만 남겨내는 방법**이다.  
 이때, 작은 수부터 차례대로 증가시키면서 소수인 경우, 범위 내 배수를 모두 소수에서 걸러내는 방식을 취한다. (배수는 분해가 된다는 뜻이므로, 소수에 해당하지 않는다.)  
@@ -70,3 +70,5 @@ for num in x:
   sqrt = int(num ** .5)
   print("YES" if primes[sqrt] and sqrt ** 2 == num else "NO")
 {% endhighlight %}
+
+[에라토스테네스의 체]: https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4

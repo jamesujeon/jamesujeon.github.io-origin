@@ -43,7 +43,7 @@ print(advancer_count)
 위 코드는 항상 입력받은 점수 배열의 요소를 모두 순회하도록 되어 있다.  
 이를 개선시켜 **반대 조건일 때 순회를 중지**하도록 해 불필요한 순회를 하지 않도록 한다.
 
-반대 조건을 구할 때, [드 모르간의 법칙](https://ko.wikipedia.org/wiki/%EB%93%9C_%EB%AA%A8%EB%A5%B4%EA%B0%84%EC%9D%98_%EB%B2%95%EC%B9%99#%EB%85%BC%EB%A6%AC_%ED%9A%8C%EB%A1%9C%EC%97%90%EC%84%9C%EC%9D%98_%EB%93%9C_%EB%AA%A8%EB%A5%B4%EA%B0%84%EC%9D%98_%EB%B2%95%EC%B9%99){:target="_blank"}을 이용하면 쉽게 구할 수 있다.
+반대 조건을 구할 때, [드 모르간의 법칙][드 모르간의 법칙]{:target="_blank"}을 이용하면 쉽게 구할 수 있다.
 
 ![De Morgan's laws](assets/De_Morgan's_laws.png "De Morgan's laws")
 
@@ -75,3 +75,5 @@ print(advancer_count)
 {% endhighlight %}
 
 이로써 불필요한 순회를 줄일 수 있다.
+
+[드 모르간의 법칙]: https://ko.wikipedia.org/wiki/%EB%93%9C_%EB%AA%A8%EB%A5%B4%EA%B0%84%EC%9D%98_%EB%B2%95%EC%B9%99#%EB%85%BC%EB%A6%AC_%ED%9A%8C%EB%A1%9C%EC%97%90%EC%84%9C%EC%9D%98_%EB%93%9C_%EB%AA%A8%EB%A5%B4%EA%B0%84%EC%9D%98_%EB%B2%95%EC%B9%99
