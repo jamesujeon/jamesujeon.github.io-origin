@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Baekjoon 문제 풀이: 9095 - 1, 2, 3 더하기"
+title:  "백준 문제 풀이: 9095 - 1, 2, 3 더하기"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
 tags: [problem-solving, baekjoon, dynamic-programming, python]
