@@ -1,5 +1,10 @@
 .tag {
+  &-items {
+    line-height: 2;
+  }
+
   &-item {
+    display: inline-block;
     background-color: $tag-bg-color;
     color: $tag-text-color;
     font-family: $sans-serif;
