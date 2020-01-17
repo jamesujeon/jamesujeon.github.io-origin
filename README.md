@@ -19,3 +19,4 @@ Original sources are here, https://github.com/jamesujeon/jamesujeon.github.io-or
 - Add 'Facebook Like' and 'Facebook Sharing' buttons on post page.
   - Ref: https://developers.facebook.com/docs/plugins/like-button/?translation
 - Add 'Cheet Sheets' menu.
+- Apply multilingual(using multiple languages) pages.
