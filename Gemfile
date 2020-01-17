@@ -13,4 +13,5 @@ gem "rouge"
 group :jekyll_plugins do
     gem "jekyll-paginate-v2"
     gem "jekyll-postfiles"
+    gem "jekyll-sitemap"
 end

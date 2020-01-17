@@ -39,6 +39,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-postfiles
+  - jekyll-sitemap
   - jemoji
 
 # Permalinks
