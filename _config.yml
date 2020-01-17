@@ -1,7 +1,7 @@
 # Site settings
 title:          Jamesu Devlog
 description:    "Dev Blog by James Minsu Jeon"
-url:            "https://jamesujeon.github.io"
+url:            "https://jamesu.dev"
 lang:           "ko_KR"
 timezone:       "Asia/Seoul"
 home_path:      "/posts"
@@ -13,7 +13,7 @@ google_analytics: UA-153146788-1
 author:
   name:         jamesujeon
   email:        jamesujeon@gmail.com
-  url:          https://jamesujeon.github.io
+  url:          https://jamesu.dev
 
 social:
   name: James Minsu Jeon
