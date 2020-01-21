@@ -18,6 +18,7 @@ main,
   overflow: auto;
   top: 0;
   position: static;
+  z-index: 1;
 
   &-container {
     margin: 1rem auto;
