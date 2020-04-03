@@ -4,6 +4,7 @@ title: "Xcode 11에서 Archive 버튼이 비활성화된 경우"
 author: "jamesujeon"
 categories: [Mobile, iOS]
 tags: [xcode]
+title_image: xcode_title.png
 ---
 
 편의상 실제 기기가 아닌 시뮬레이터를 이용해 개발을 하는 경우가 많을 것이라 생각된다.  
