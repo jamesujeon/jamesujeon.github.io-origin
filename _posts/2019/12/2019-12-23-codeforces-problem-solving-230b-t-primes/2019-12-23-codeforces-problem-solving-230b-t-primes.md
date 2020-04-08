@@ -3,7 +3,7 @@ layout: post
 title:  "Codeforces 문제 풀이: 230B - T-primes"
 author: "jamesujeon"
 categories: [Etc, Algorithm]
-tags: [problem-solving, codeforces, python]
+tags: [problem-solving, codeforces, sieve-of-eratosthenes, python]
 ---
 
 ![230B - T-primes](assets/codeforces_230b_t-primes.png "230B - T-primes")
