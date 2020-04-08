@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "rake", "~> 10.0", :group => :development
+gem "rake", :group => :development
 
 gem "jekyll", "~> 3.6"
 gem "jekyll-feed", "~> 0.10.0"
