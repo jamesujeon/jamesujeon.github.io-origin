@@ -30,17 +30,17 @@ Scene 개념에 대해 더 자세히 알아보고 싶다면, 다음 링크들을
 
 ### 1. 프로젝트에서 Main 스토리보드 설정을 제거한다. 이때, 프로젝트 설정을 이용하면 편리하다.
 
-![Removing Storyboard Step 1-1](assets/figures/removing_storyboard/1_1.png)
-![Removing Storyboard Step 1-2](assets/figures/removing_storyboard/1_2.png)
-![Removing Storyboard Step 1-3](assets/figures/removing_storyboard/1_3.png)
+![Removing Storyboard Step 1-1](assets/figures/removing_storyboard/1_1.png){:width="100%"}
+![Removing Storyboard Step 1-2](assets/figures/removing_storyboard/1_2.png){:width="100%"}
+![Removing Storyboard Step 1-3](assets/figures/removing_storyboard/1_3.png){:width="100%"}
 
 위와 같이 프로젝트 설정에서 `Main Interface` 항목의 `Main` 값을 지우면, `Info.plist`에도 반영된다.  
 만약, `Info.plist`에 `Main storyboard file base name` 항목이 남아있다면, 제거하도록 한다.
 
 ### 2. Xcode 11의 경우, `Info.plist`의 Scene 관련 항목에서 `Storyboard Name` 항목을 제거한다.
 
-![Removing Storyboard Step 2-1](assets/figures/removing_storyboard/2_1.png)
-![Removing Storyboard Step 2-2](assets/figures/removing_storyboard/2_2.png)
+![Removing Storyboard Step 2-1](assets/figures/removing_storyboard/2_1.png){:width="100%"}
+![Removing Storyboard Step 2-2](assets/figures/removing_storyboard/2_2.png){:width="100%"}
 
 ### 3. `Main.storyboard` 파일을 삭제한다.
 
@@ -67,8 +67,8 @@ class ViewController: UIViewController {
 
 ### 1. `AppDelegate`에서 Scene 관련 함수 정의부를 제거한다.
 
-![Removing SceneDelegate Step 1-1](assets/figures/removing_scenedelegate/1_1.png)
-![Removing SceneDelegate Step 1-2](assets/figures/removing_scenedelegate/1_2.png)
+![Removing SceneDelegate Step 1-1](assets/figures/removing_scenedelegate/1_1.png){:width="100%"}
+![Removing SceneDelegate Step 1-2](assets/figures/removing_scenedelegate/1_2.png){:width="100%"}
 
 ### 2. `AppDelegate`에 `UIWindow` 설정 로직을 추가한다.
 
@@ -93,8 +93,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 ### 3. `Info.plist`에서 `Application Scene Manifest` 항목을 통째로 제거한다.
 
-![Removing SceneDelegate Step 3-1](assets/figures/removing_scenedelegate/3_1.png)
-![Removing SceneDelegate Step 3-2](assets/figures/removing_scenedelegate/3_2.png)
+![Removing SceneDelegate Step 3-1](assets/figures/removing_scenedelegate/3_1.png){:width="100%"}
+![Removing SceneDelegate Step 3-2](assets/figures/removing_scenedelegate/3_2.png){:width="100%"}
 
 ### 4. 앱을 실행시켜 잘 뜨는지 확인한다.
 
