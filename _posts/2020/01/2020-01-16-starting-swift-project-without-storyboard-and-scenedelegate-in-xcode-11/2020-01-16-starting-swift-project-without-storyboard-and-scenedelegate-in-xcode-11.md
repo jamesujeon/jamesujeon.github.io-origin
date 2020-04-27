@@ -46,7 +46,7 @@ Scene 개념에 대해 더 자세히 알아보고 싶다면, 다음 링크들을
 
 해당 파일은 더 이상 사용하지 않으므로 삭제하도록 한다.
 
-### 4. `ViewController`의 기본 뷰에 배경색을 입히고 실행시켜 잘 뜨는지 확인한다.
+### 4. `ViewController`의 기본 뷰에 배경색을 입히고 `SceneDelegate`에 연동한 후, 앱을 실행시켜 적용한 배경색이 잘 뜨는지 확인한다.
 
 {% highlight swift %}
 class ViewController: UIViewController {
@@ -56,6 +56,22 @@ class ViewController: UIViewController {
 
         view.backgroundColor = .red
     }
+}
+{% endhighlight %}
+
+{% highlight swift %}
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
+    }
+
+    ...
 }
 {% endhighlight %}
 
@@ -73,32 +89,33 @@ class ViewController: UIViewController {
 ### 2. `AppDelegate`에 `UIWindow` 설정 로직을 추가한다.
 
 {% highlight swift %}
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: windowScene)
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow()
         window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
-    }
 
-    ...
+        return true
+    }
 }
 {% endhighlight %}
 
-### 3. `Info.plist`에서 `Application Scene Manifest` 항목을 통째로 제거한다.
+### 3. `SceneDelegate.swift` 파일을 삭제한다.
+
+해당 파일은 더 이상 사용하지 않으므로 삭제하도록 한다.
+
+### 4. `Info.plist`에서 `Application Scene Manifest` 항목을 통째로 제거한다.
 
 ![Removing SceneDelegate Step 3-1](assets/figures/removing_scenedelegate/3_1.png)
 ![Removing SceneDelegate Step 3-2](assets/figures/removing_scenedelegate/3_2.png)
 
-### 4. 앱을 실행시켜 잘 뜨는지 확인한다.
+### 5. 앱을 실행시켜 앞서 적용한 배경색이 잘 뜨는지 확인한다.
 
-앱이 잘 실행되면, 뿌듯한 미소를 짓는다. 🙂
+앱이 실행되고 빨간색 배경이 보이면, 잘 적용된 것이다. 🙂
 
 [Managing Your App's Life Cycle]: https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle
 [Scenes]: https://developer.apple.com/documentation/uikit/app_and_environment/scenes
