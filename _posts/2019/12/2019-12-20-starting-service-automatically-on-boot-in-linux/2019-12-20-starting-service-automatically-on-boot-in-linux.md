@@ -4,7 +4,6 @@ title:  "Linux 부팅 시, 서비스 자동으로 시작하기"
 author: "jamesujeon"
 categories: [Infra, OS]
 tags: [linux, command]
-title_image: linux_tux_title.png
 ---
 
 [이전 글][이전 글]{:target="_blank"}에서 Docker 컨테이너를 자동으로 시작하는 법을 알았다.  

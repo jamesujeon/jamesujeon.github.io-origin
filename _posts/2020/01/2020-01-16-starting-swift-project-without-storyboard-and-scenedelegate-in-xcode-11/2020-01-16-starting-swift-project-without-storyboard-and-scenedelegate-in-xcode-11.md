@@ -4,7 +4,6 @@ title:  "Xcode 11에서 스토리보드와 SceneDelegate 없이 Swift 프로젝�
 author: "jamesujeon"
 categories: [Mobile, iOS]
 tags: [swift, xcode, storyboard, scene]
-title_image: swift_title.png
 ---
 
 ## 개요
