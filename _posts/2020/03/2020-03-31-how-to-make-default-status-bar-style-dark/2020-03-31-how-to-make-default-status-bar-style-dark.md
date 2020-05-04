@@ -4,7 +4,6 @@ title: "기본 상태바 스타일을 Dark로 만드는 방법"
 author: "jamesujeon"
 categories: [Mobile, iOS]
 tags: [swift, dark-mode]
-title_image: swift_title.png
 ---
 
 요즘 `Dark Mode`가 대세(?)라 그런지 많은 앱이 그것에 맞춰 디자인 되고 있다.  

@@ -4,7 +4,6 @@ title:  "Docker 컨테이너 자동으로 시작하기"
 author: "jamesujeon"
 categories: [Infra, Virtualization]
 tags: [docker, container]
-title_image: docker_title.png
 ---
 
 Docker가 재시작되지 않고 항상 켜져있을 수 있다면, 컨테이너를 재시작할 필요는 없을 것이다.  

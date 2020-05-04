@@ -4,8 +4,13 @@ title:  "Jekyll 환경설정 파일 이해하기"
 author: "jamesujeon"
 categories: [Etc, Blog]
 tags: [github-pages, jekyll]
-title_image: octojekyll_title.png
 ---
+
+## TL;DR
+
+`_config.xml` 파일에 환경설정 옵션을 설정하고, `site` 변수를 통해 사용할 수 있다.
+
+<br>
 
 ## Jekyll 환경설정 파일이란?
 
@@ -115,7 +120,3 @@ Jekyll은 전역적인 `site` 변수를 제공한다.
 이처럼 전역 사용자 정의 옵션을 `_config.xml` 파일에 정의하면, 레이아웃 구성에 필요한 값들을 쉽게 활용할 수 있다.  
 또한, 코드 중복을 피하고 가독성이 좋아지므로, 유지보수가 용이해진다.  
 따라서 필요한 옵션이 있다면, `_config.xml` 파일을 적극 활용하도록 하자.
-
-## 한 줄 요약
-
-`_config.xml` 파일에 환경설정 옵션을 설정하고, `site` 변수를 통해 사용하자.
