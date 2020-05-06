@@ -6,6 +6,8 @@ categories: [Infra, OS]
 tags: [linux, command]
 ---
 
+## 개요
+
 [이전 글][이전 글]{:target="_blank"}에서 Docker 컨테이너를 자동으로 시작하는 법을 알았다.  
 그렇다면, 서버가 죽었을 때 Docker가 시작되어야 Docker 컨테이너 또한 재시작을 할 수 있지 않을까?
 
