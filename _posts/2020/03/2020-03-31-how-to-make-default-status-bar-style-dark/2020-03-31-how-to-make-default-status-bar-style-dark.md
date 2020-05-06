@@ -6,6 +6,21 @@ categories: [Mobile, iOS]
 tags: [swift, dark-mode]
 ---
 
+## TL;DR
+
+- `Info.plist`에서 `User Interface Style` 키에 `Light` 값을 설정한다.
+
+- 특정 화면만 다르게 설정하고 싶다면, `preferredStatusBarStyle` 프로퍼티를 이용한다.
+
+- 인터페이스 스타일과 상태바 스타일은 반대의 값을 사용한다.  
+(예: 인터페이스 스타일이 `Dark`이면, 상태바 스타일은 `Light Content`이다.)
+
+- 키보드 및 특정 뷰의 기본 배경색 등은 인터페이스 스타일을 따라간다.
+
+<br>
+
+## 기본 상태바 스타일 바꾸기
+
 요즘 `Dark Mode`가 대세(?)라 그런지 많은 앱이 그것에 맞춰 디자인 되고 있다.  
 하지만, 무조건 그 대세를 따르라는 법은 없다!
 
