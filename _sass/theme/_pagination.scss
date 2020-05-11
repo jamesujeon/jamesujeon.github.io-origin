@@ -4,9 +4,8 @@
   margin: -1rem 0 1rem;
 
   span {
-    margin: 0 .3rem;
-
     a {
+      margin: 0 .3rem;
       color: $default-color;
       font-size: 1.1rem;
       opacity: .4;
@@ -18,5 +17,11 @@
       opacity: .8;
       pointer-events: none;
     }
+  }
+
+  .text {
+    color: $default-color;
+    font-size: 1.1rem;
+    opacity: .4;
   }
 }

@@ -51,7 +51,7 @@ pagination:
   permalink:    /p:num/
   sort_field:   "date"
   sort_reverse: true
-  per_page:     5
+  per_page:     10
   trail:
     before:     2
     after:      2
