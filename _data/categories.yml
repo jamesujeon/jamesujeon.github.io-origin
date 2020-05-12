@@ -13,6 +13,8 @@ infra:
 etc:
   name: "Etc"
   children:
+    til:
+      name: "TIL"
     algorithm:
       name: "Algorithm"
     blog:
