@@ -8,7 +8,7 @@ tags: [ios, ui]
 
 ## TL;DR
 
-- 이제 기본 `Network Activity Indicator`를 보여줄 필요가 없다.
+- 이제 `Network Activity Indicator`를 보여줄 필요가 없다.
 
 <br>
 
