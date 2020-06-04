@@ -1,12 +1,11 @@
 {% if paginator.page_trail %}
   <div class="pagination">
-    {% assign first_page_threshold = paginator.page | minus: site.pagination.trail.before %}
-    {% if paginator.first_page_path and paginator.first_page < first_page_threshold %}
+    {% assign first_dot_threshold = paginator.first_page | plus: 1 %}
+    {% if paginator.page_trail.first.num != paginator.first_page %}
       <span>
         <a href="{{ paginator.first_page_path | prepend: site.baseurl }}">{{ paginator.first_page }}</a>
       </span>
-      {% assign first_page_dot_threshold = first_page_threshold | minus: 1 %}
-      {% if paginator.first_page < first_page_dot_threshold %}
+      {% if paginator.page_trail.first.num != first_dot_threshold %}
         <span class="text">...</span>
       {% endif %}
     {% endif %}
@@ -17,10 +16,9 @@
       </span>
     {% endfor %}
 
-    {% assign last_page_threshold = paginator.page | plus: site.pagination.trail.after %}
-    {% if paginator.last_page_path and paginator.last_page > last_page_threshold %}
-      {% assign last_page_dot_threshold = last_page_threshold | plus: 1 %}
-      {% if paginator.last_page > last_page_dot_threshold %}
+    {% assign last_dot_threshold = paginator.last_page | minus: 1 %}
+    {% if paginator.page_trail.last.num != paginator.last_page %}
+      {% if paginator.page_trail.last.num != last_dot_threshold %}
         <span class="text">...</span>
       {% endif %}
       <span>
