@@ -3,7 +3,7 @@ layout: post
 title: "기본 상태바 스타일을 Dark로 만드는 방법"
 author: "jamesujeon"
 categories: [Mobile, iOS]
-tags: [swift, dark-mode]
+tags: [ios, swift, ui, dark-mode]
 ---
 
 ## TL;DR

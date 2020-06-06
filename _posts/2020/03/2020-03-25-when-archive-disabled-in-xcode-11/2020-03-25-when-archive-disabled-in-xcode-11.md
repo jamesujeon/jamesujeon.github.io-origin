@@ -3,7 +3,7 @@ layout: post
 title: "Xcode 11에서 Archive 버튼이 비활성화된 경우"
 author: "jamesujeon"
 categories: [Mobile, iOS]
-tags: [xcode]
+tags: [ios, xcode]
 ---
 
 ## TL;DR
