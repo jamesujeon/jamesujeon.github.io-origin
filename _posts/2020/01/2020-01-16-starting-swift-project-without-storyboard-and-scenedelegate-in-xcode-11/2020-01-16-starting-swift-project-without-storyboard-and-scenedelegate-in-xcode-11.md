@@ -3,7 +3,7 @@ layout: post
 title:  "Xcode 11에서 스토리보드와 SceneDelegate 없이 Swift 프로젝트 시작하기"
 author: "jamesujeon"
 categories: [Mobile, iOS]
-tags: [swift, xcode, storyboard, scene]
+tags: [ios, swift, xcode, storyboard, scene]
 ---
 
 ## 개요
