@@ -7,10 +7,28 @@
       {% include navigation.html %}
 
       <main>
+        <!-- todo: move to a new page for search -->
+        <div id="search-demo-container">
+          <input id="search-input" type="search" placeholder="search...">
+          <ul id="results-container"></ul>
+        </div>
+
         {{ content }}
       </main>
 
       {% include footer.html %}
     </div>
   </body>
+
+  <!-- todo: move to a new page for search -->
+  <script>
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '{{ site.baseurl }}/assets/json/search-data.json',
+      searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+      noResultsText: '',
+      limit: 10
+    })
+  </script>
 </html>
