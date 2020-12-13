@@ -1,5 +1,5 @@
-importJavaScript('scrollToTop');
-importJavaScript('copyEmailToClipboard');
+importJavaScript('utils/scroll-to-top');
+importJavaScript('utils/copy-email-to-clipboard');
 
 $(document).ready(function() {
   setupScrollToTopButton();
