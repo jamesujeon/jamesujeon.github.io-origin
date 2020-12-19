@@ -41,7 +41,7 @@
   &-pagination {
     @extend .pagination;
     height: .5rem;
-    margin: 3rem 0 0 !important;
+    margin: 3rem 0 3rem !important;
 
     span {
       margin: 0 !important;
@@ -97,8 +97,6 @@
     border: 1px solid $grey-2;
     border-radius: 3px;
     padding: 1rem;
-    padding-bottom: 0;
-    margin: 3rem 0 1rem;
   }
 
   .category-items {

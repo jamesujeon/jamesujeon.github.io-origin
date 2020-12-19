@@ -3,5 +3,6 @@
 .DS_Store
 .sass-cache
 .jekyll-cache
+.vscode
 _site
 Gemfile.lock
