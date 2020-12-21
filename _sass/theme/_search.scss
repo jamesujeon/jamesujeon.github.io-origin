@@ -1,0 +1,18 @@
+.search {
+  padding: 1rem 0;
+
+  &-input-container {
+    display: inline-block;
+    border: 1px solid $default-color;
+    padding: 0 4px 3px 6px;
+
+    #search-input {
+      border: none;
+      font-family: $sans-serif;
+
+      &:focus {
+        outline-width: 0;
+      }
+    }
+  }
+}
