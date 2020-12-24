@@ -15,6 +15,10 @@ $post-subtitle-color: #888;
 $tag-bg-color: #eee;
 $tag-text-color: #999;
 
+:root {
+  --point-color: #2dc84d;
+}
+
 // Fonts
 $serif: 'Roboto Slab', Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
 $sans-serif: 'Noto Sans KR', 'Noto Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;

@@ -2,27 +2,47 @@
 layout: default
 ---
 
-<div class="common-header">
-  <div class="common-header-title">
-    <h1>Search</h1>
+<div class="common-header search">
+  <div class="search">
+    <i class="fas fa-search fa-fw"></i>
+    <input id="search-input" 
+      type="search" 
+      tabindex="1" 
+      spellcheck="false" 
+      placeholder="Search"
+    >
   </div>
 </div>
 
-<div class="search">
-  <div class="search-input-container">
-    <i class="fas fa-search fa-fw"></i>
-    <input id="search-input" type="search" tabindex="1">
-  </div>
-  <ul id="search-results"></ul>
-</div>
+<ul id="search-results"></ul>
 
 <script>
+  pointColor = getComputedStyle(document.documentElement).getPropertyValue('--point-color')
+
   window.simpleJekyllSearch = new SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results'),
     json: '{{ site.baseurl }}/assets/json/search-data.json',
-    searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+    searchResultTemplate: `
+      <li>
+        <i class="fas fa-link fa-fw"></i>
+        <a href="{url}">{title}</a>
+      </li>
+    `,
+    templateMiddleware: function(prop, value, template) {
+      if (prop === 'url') { return }
+
+      queries = document.getElementById('search-input').value.split(' ').filter(Boolean)
+      for (let query of queries) {
+        value = value.split(query).join(`<b style="color: ${pointColor}">` + query + '</b>')
+      }
+      return value
+    },
     noResultsText: '',
     limit: 100
   })
+
+  window.onload = function() {
+    window.simpleJekyllSearch.search(document.getElementById('search-input').value)
+  }
 </script>
