@@ -51,15 +51,25 @@
 
 #search-results {
   list-style: none;
-  padding: 1rem .5rem;
+  padding: .1rem .5rem;
 
   li {
     font-size: 1.2rem;
+    margin: 2rem 0;
+
+    div {
+      display: flex;
+      align-items: baseline;
+    }
 
     a {
       color: $default-color;
       width: calc(100% - 2rem);
-      padding-left: .3rem;
+      padding-left: .8rem;
+
+      b {
+        color: $point-color;
+      }
     }
   }
 }
