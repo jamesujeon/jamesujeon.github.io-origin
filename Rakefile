@@ -4,7 +4,7 @@ require "bundler/setup"
 require "jekyll"
 
 
-DEPLOY_URL = "https://github.com/jamesujeon/jamesujeon.github.io.git"
+DEPLOY_URL = "git@github.com:jamesujeon/jamesujeon.github.io.git"
 
 
 desc "Build"
