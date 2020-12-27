@@ -17,8 +17,6 @@ tags: [android, ui]
 7. `ConstraintLayout` 사용 시, 고정 높이가 적용되지 않는 경우
 8. `ellipsize`를 `middle`로 적용하는 경우 주의사항
 
-<br>
-
 ## 자잘한 안드로이드 UI 팁들 2
 
 유지보수를 하며 추가적으로 간단하게 정리했던 팁들이다.  

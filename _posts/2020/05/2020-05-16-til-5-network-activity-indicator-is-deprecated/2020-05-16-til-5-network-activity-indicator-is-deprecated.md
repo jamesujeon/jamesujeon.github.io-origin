@@ -10,8 +10,6 @@ tags: [ios, ui]
 
 - 이제 `Network Activity Indicator`를 보여줄 필요가 없다.
 
-<br>
-
 ## `Network Activity Indicator`란? 🤔
 
 iOS 앱에서 네트워크 연결이 길어지는 경우, `Network Activity Indicator`라는 **네트워크 연결중 표시를 위한 UI**가 있다.

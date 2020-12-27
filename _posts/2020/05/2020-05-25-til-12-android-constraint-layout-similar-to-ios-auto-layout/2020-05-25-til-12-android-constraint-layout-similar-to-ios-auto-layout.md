@@ -11,8 +11,6 @@ tags: [android, ui]
 - 안드로이드에서 `ConstraintLayout`을 사용하면,  
 iOS의 `Auto Layout` 컨셉으로 레이아웃을 구성할 수 있다.
 
-<br>
-
 ## iOS 개발자에게 반가운 안드로이드의 `ConstraintLayout`
 
 iOS 개발자라면 스토리보드를 사용하든 코드로 작성하든 `Auto Layout`을 이용해 뷰를 구성한 경험이 있을 것이다.

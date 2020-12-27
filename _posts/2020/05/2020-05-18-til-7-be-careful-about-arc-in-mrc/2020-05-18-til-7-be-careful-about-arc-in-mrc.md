@@ -12,8 +12,6 @@ tags: [ios, objective-c]
 특히, **객체 생성용 클래스 메소드**를 조심하자.  
 (예: `[NSArray array]`)
 
-<br>
-
 ## `MRC` 환경 내부의 `ARC`
 
 iOS 개발을 `MRC` 환경에서 해 본 사람이라면, 곳곳에 `ARC`가 숨어 있다는 사실을 알 것이다.

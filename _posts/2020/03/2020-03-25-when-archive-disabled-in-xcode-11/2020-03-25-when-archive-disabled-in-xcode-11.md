@@ -10,8 +10,6 @@ tags: [ios, xcode]
 
 시뮬레이터를 `Generic iOS Device`로 선택하면, `Archive` 버튼이 활성화된다.
 
-<br>
-
 ## `Archive` 버튼이 비활성화된 경우
 
 편의상 실제 기기가 아닌 시뮬레이터를 이용해 개발을 하는 경우가 많을 것이라 생각된다.  

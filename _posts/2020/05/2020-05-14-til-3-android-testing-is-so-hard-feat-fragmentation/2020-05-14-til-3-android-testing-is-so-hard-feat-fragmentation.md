@@ -16,8 +16,6 @@ tags: [android, test]
 - `SwipeRefreshLayout` 안에 `RecyclerView`가 연속으로 중첩된 경우,  
 `nestedScrollingEnabled` 옵션을 이용해 새로고침 동작이 중복되지 않도록 할 수 있다.
 
-<br>
-
 ## 끔찍한 안드로이드의 파편화
 
 ![Figure 1](assets/figure_1.jpg)

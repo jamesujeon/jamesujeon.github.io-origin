@@ -11,8 +11,6 @@ tags: [android, android-studio]
 - 안드로이드에서 아이콘을 추가할 때,
 Android Studio의 **Image Asset Studio**를 이용하면 쉽게 **여러 종류의 아이콘(적응형 및 레거시 아이콘 포함)**을 생성할 수 있다.
 
-<br>
-
 ## 적응형 및 레거시 아이콘 추가를 위한 Image Asset Studio
 
 안드로이드 개발자라면 많은 사람들이 Android Studio를 사용할 것이다.  

@@ -10,8 +10,6 @@ tags: [tool]
 
 - [Notion](https://www.notion.so){:target="_blank"} 툴은 개발자를 위한 **메모 및 글 관리**에 유용하다.
 
-<br>
-
 ## 개발자를 위한 메모 및 글 관리 툴
 
 개발을 하다보면 Code Snippet, 유용한 링크, 메모 등을 빠르게 작성하고, 보관하고 싶을 것이다.  

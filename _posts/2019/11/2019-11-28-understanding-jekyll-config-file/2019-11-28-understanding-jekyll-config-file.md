@@ -10,8 +10,6 @@ tags: [github-pages, jekyll]
 
 `_config.xml` 파일에 환경설정 옵션을 설정하고, `site` 변수를 통해 사용할 수 있다.
 
-<br>
-
 ## Jekyll 환경설정 파일이란?
 
 Jekyll은 정적 사이트 생성을 위한 다양한 옵션이 준비되어 있다.  
