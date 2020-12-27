@@ -55,6 +55,10 @@ layout: default
         }
       }
 
+      if (queries.length > ranges.length) {
+        return value
+      }
+
       ranges.sort((a, b) => a[0] - b[0] || b[1] - a[1])
       ranges = ranges.reduce((a, b) => {
         const last = a[a.length - 1];
