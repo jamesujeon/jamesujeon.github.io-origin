@@ -25,11 +25,26 @@ layout: default
     json: '{{ site.baseurl }}/assets/json/search-data.json',
     searchResultTemplate: `
       <li>
-        <div><i class="fas fa-folder fa-fw"></i><a href="{url}">{categories}</a></div>
-        <div><i class="fas fa-book fa-fw"></i><a href="{url}">{title}</a></div>
-        <div><i class="fas fa-tags fa-fw"></i><a href="{url}">{tags}</a></div>
-        <div><i class="fas fa-calendar-alt fa-fw"></i><a href="{url}">{date}</a></div>
-        <div><i class="fas fa-link fa-fw"></i><a href="{url}">{urlString}</a></div>
+        <div>
+          <i class="fas fa-folder fa-fw"></i>
+          <a href="{url}">{categories}</a>
+        </div>
+        <div>
+          <i class="fas fa-book fa-fw"></i>
+          <a href="{url}">{title}</a>
+        </div>
+        <div>
+          <i class="fas fa-tags fa-fw"></i>
+          <a href="{url}">{tags}</a>
+        </div>
+        <div>
+          <i class="fas fa-calendar-alt fa-fw"></i>
+          <a href="{url}">{date}</a>
+        </div>
+        <div>
+          <i class="fas fa-link fa-fw"></i>
+          <a href="{url}" style="font-size: 1rem;">{urlString}</a>
+        </div>
       </li>
     `,
     templateMiddleware: function(prop, value, template) {
