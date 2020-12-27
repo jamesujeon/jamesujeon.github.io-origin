@@ -4,7 +4,7 @@
   border-radius: 6px;
   width: 100%;
   height: 3.2rem;
-  padding: 0 .8rem .1rem .8rem;
+  padding: 0 .8rem;
 
   .search {
     display: table-cell;
@@ -22,9 +22,9 @@
       font-family: $sans-serif;
       font-weight: bold;
       font-size: 1.5rem;
-      line-height: 2rem;
+      line-height: 3rem;
       width: calc(100% - 2.2rem);
-      height: 2rem;
+      height: 3rem;
       padding-left: .5rem;
 
       &:focus {
