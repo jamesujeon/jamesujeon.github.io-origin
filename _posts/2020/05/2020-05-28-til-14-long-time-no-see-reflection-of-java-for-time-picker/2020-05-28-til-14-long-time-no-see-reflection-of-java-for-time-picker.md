@@ -10,8 +10,6 @@ tags: [android, java, ui]
 
 - 기본으로 제공되는 `TimePicker`를 커스텀하기 위해 자바의 `Reflection`을 사용할 수 있다.
 
-<br>
-
 ## 뭔가 제약이 많은 기본 `TimePicker`
 
 앱 개발을 하다 보면 디자인 요구사항을 위해 뷰를 커스텀 할 일이 많아진다.  

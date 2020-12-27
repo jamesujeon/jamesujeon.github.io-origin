@@ -10,8 +10,6 @@ tags: [ios, swift]
 
 - `unowned` 레퍼런스는 피하고, 대신 `weak`을 사용하자.
 
-<br>
-
 ## `unowned` 레퍼런스란? 🤔
 
 Swift로 ARC 환경에서 iOS 앱을 개발할 때, 정말 중요한 개념이 있다.  
