@@ -81,6 +81,18 @@
     }
   }
 
+  &-graph {
+    margin-top: 1.5rem;
+
+    img {
+      margin: 0;
+    }
+
+    @media (min-width: 800px) {
+      margin-top: 3.5rem;
+    }
+  }
+
   &-content {
     margin: 3.5rem 0;
 
