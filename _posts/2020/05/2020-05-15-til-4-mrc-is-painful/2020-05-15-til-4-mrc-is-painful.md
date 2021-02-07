@@ -3,7 +3,7 @@ layout: post
 title:  "TIL 4: MRC는 괴로워"
 author: "jamesujeon"
 categories: [Etc, TIL]
-tags: [ios]
+tags: [ios, objective-c]
 ---
 
 ## TL;DR
