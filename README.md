@@ -9,6 +9,8 @@ Original sources are here, https://github.com/jamesujeon/jamesujeon.github.io-or
 
 | Version | Updated Date | Description                                                |
 | ------- | ------------ | ---------------------------------------------------------- |
+| 1.0.8   | 2021.01.31   | Add my GitHub contribution chart on about page.            |
+| 1.0.7   | 2020.12.27   | Upgrade search page.                                       |
 | 1.0.6   | 2020.12.27   | Add search page.                                           |
 | 1.0.5   | 2020.06.05   | Fix bug: invalid page navigation for first and last pages. |
 | 1.0.4   | 2020.05.12   | Add page navigation for first and last pages.              |
