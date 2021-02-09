@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll 환경설정 파일 이해하기"
 author: "jamesujeon"
 categories: [Etc, Blog]
-tags: [github-pages, jekyll]
+tags: [jekyll]
 ---
 
 ## TL;DR
