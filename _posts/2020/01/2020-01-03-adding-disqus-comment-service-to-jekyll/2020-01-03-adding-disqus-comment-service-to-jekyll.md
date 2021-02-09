@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll에 Disqus 댓글 서비스 연동하기"
 author: "jamesujeon"
 categories: [Etc, Blog]
-tags: [github-pages, jekyll, disqus]
+tags: [jekyll, disqus]
 ---
 
 ## 별도의 댓글 서비스를 이용해야 하는 이유
