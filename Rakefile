@@ -5,6 +5,8 @@ require "jekyll"
 
 
 DEPLOY_URL = "git@github.com:jamesujeon/jamesujeon.github.io.git"
+USER_NAME = "Jamesu"
+USER_EMAIL = "jamesujeon@gmail.com"
 
 
 desc "Build"
@@ -25,8 +27,8 @@ task :deploy => [:build] do
 
     Dir.chdir tmp
     system "git init"
-    system "git config user.name jamesujeon"
-    system "git config user.email jamesujeon@gmail.com"
+    system "git config user.name #{USER_NAME}"
+    system "git config user.email #{USER_EMAIL}"
     system "git remote add origin #{DEPLOY_URL}"
     system "git pull origin master"
 
@@ -48,8 +50,8 @@ task :deploy_by_force => [:build] do
     cp_r "_site/.", tmp
     Dir.chdir tmp
     system "git init"
-    system "git config user.name jamesujeon"
-    system "git config user.email jamesujeon@gmail.com"
+    system "git config user.name #{USER_NAME}"
+    system "git config user.email #{USER_EMAIL}"
     system "git remote add origin #{DEPLOY_URL}"
     system "git add ."
     system "git commit -m 'Deployed at #{Time.now}'"
