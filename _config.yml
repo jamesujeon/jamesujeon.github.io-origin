@@ -58,6 +58,7 @@ pagination:
 
 # Excludes
 exclude:
+  - _README.md
   - Gemfile
   - Gemfile.lock
   - Rakefile
