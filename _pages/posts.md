@@ -1,7 +1,7 @@
 ---
 layout: post_catalogue
 title: Posts
-permalink: /posts
+permalink: /posts/
 pagination:
   enabled: true
 ---
